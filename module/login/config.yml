@@ -1,0 +1,6 @@
+index:
+  javascript:
+    - jquery.min.js
+    - login.js
+  stylesheet:
+    - login.css

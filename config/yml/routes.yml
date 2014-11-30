@@ -1,0 +1,27 @@
+gameResult:
+  url: game/result
+  module: game
+  action: result
+gamePlay:
+  url: game/play
+  module: game
+  action: play
+  layout: default
+gameList:
+  url: game/list
+  module: game
+  action: getList
+loginUser:
+  url: login/user
+  module: login
+  action: logUser
+  layout: default
+login:
+  url: login
+  module: login
+  action: index
+  layout: default
+default:
+  module: home
+  action: index
+  layout: default

@@ -1,0 +1,2372 @@
+array(588) {
+  [0]=>
+  string(18) "adduction de l'eau"
+  [1]=>
+  string(30) "agents de contrôle biologique"
+  [2]=>
+  string(23) "agriculture symbiotique"
+  [3]=>
+  string(17) "agro-écosystème"
+  [4]=>
+  string(8) "aérobie"
+  [5]=>
+  string(3) "air"
+  [6]=>
+  string(14) "air contaminé"
+  [7]=>
+  string(11) "air pollué"
+  [8]=>
+  string(7) "air pur"
+  [9]=>
+  string(11) "aliment bio"
+  [10]=>
+  string(13) "alimentarité"
+  [11]=>
+  string(50) "aménagement du territoireaménagement territorial"
+  [12]=>
+  string(10) "anaérobie"
+  [13]=>
+  string(28) "analyse du cycle de vie(ACV)"
+  [14]=>
+  string(14) "anti-pollution"
+  [15]=>
+  string(24) "approvisionnement en eau"
+  [16]=>
+  string(9) "aquaponie"
+  [17]=>
+  string(11) "aquaponique"
+  [18]=>
+  string(9) "aquifère"
+  [19]=>
+  string(9) "aquifère"
+  [20]=>
+  string(9) "assécher"
+  [21]=>
+  string(12) "assèchement"
+  [22]=>
+  string(11) "atmosphère"
+  [23]=>
+  string(20) "atmosphère polluée"
+  [24]=>
+  string(14) "atmosphérique"
+  [25]=>
+  string(7) "barrage"
+  [26]=>
+  string(6) "bassin"
+  [27]=>
+  string(17) "bassin de captage"
+  [28]=>
+  string(18) "bassin de drainage"
+  [29]=>
+  string(21) "bassin hydrographique"
+  [30]=>
+  string(18) "bassin de rivière"
+  [31]=>
+  string(13) "bassin urbain"
+  [32]=>
+  string(10) "bien-être"
+  [33]=>
+  string(52) "le bien-être de l'hommele bien-être de l'humanité"
+  [34]=>
+  string(13) "bilan carbone"
+  [35]=>
+  string(32) "bilan carbone, empreinte carbone"
+  [36]=>
+  string(12) "bioagresseur"
+  [37]=>
+  string(25) "bioagressif, bioagressive"
+  [38]=>
+  string(12) "bioagression"
+  [39]=>
+  string(12) "biocarburant"
+  [40]=>
+  string(9) "bioclimat"
+  [41]=>
+  string(14) "biocombustible"
+  [42]=>
+  string(13) "biodiversité"
+  [43]=>
+  string(12) "bioéconomie"
+  [44]=>
+  string(11) "bioénergie"
+  [45]=>
+  string(11) "bioéthanol"
+  [46]=>
+  string(9) "biofiltre"
+  [47]=>
+  string(6) "biogaz"
+  [48]=>
+  string(8) "biologie"
+  [49]=>
+  string(10) "biologique"
+  [50]=>
+  string(10) "biologique"
+  [51]=>
+  string(8) "biomasse"
+  [52]=>
+  string(41) "biomasse urbainebiomasse en milieu urbain"
+  [53]=>
+  string(5) "biome"
+  [54]=>
+  string(13) "biomimétique"
+  [55]=>
+  string(13) "biomimétique"
+  [56]=>
+  string(10) "biosphère"
+  [57]=>
+  string(7) "biotope"
+  [58]=>
+  string(4) "bois"
+  [59]=>
+  string(4) "bois"
+  [60]=>
+  string(4) "bois"
+  [61]=>
+  string(15) "boisé, boisée"
+  [62]=>
+  string(13) "bois-énergie"
+  [63]=>
+  string(4) "boue"
+  [64]=>
+  string(15) "boueux, boueuse"
+  [65]=>
+  string(18) "canalisation d'eau"
+  [66]=>
+  string(18) "captage (de l'eau)"
+  [67]=>
+  string(82) "captage et stockage du dioxyde de carbonecapture et stockage du dioxyde de carbone"
+  [68]=>
+  string(9) "carburant"
+  [69]=>
+  string(17) "carburant fossile"
+  [70]=>
+  string(17) "cascade trophique"
+  [71]=>
+  string(21) "catastrophe naturelle"
+  [72]=>
+  string(19) "centrale à charbon"
+  [73]=>
+  string(26) "centrale de cogénération"
+  [74]=>
+  string(20) "centrale électrique"
+  [75]=>
+  string(18) "centrale éolienne"
+  [76]=>
+  string(25) "centrale hydroélectrique"
+  [77]=>
+  string(20) "centrale hydraulique"
+  [78]=>
+  string(21) "centrale marémotrice"
+  [79]=>
+  string(19) "centrale nucléaire"
+  [80]=>
+  string(18) "centrale thermique"
+  [81]=>
+  string(25) "chantier(de construction)"
+  [82]=>
+  string(39) "chaîne alimentaire, chaine alimentaire"
+  [83]=>
+  string(41) "changement du climatchangement climatique"
+  [84]=>
+  string(14) "citerne à eau"
+  [85]=>
+  string(6) "climat"
+  [86]=>
+  string(10) "climatique"
+  [87]=>
+  string(14) "cogénération"
+  [88]=>
+  string(11) "combustible"
+  [89]=>
+  string(11) "combustible"
+  [90]=>
+  string(19) "combustible fossile"
+  [91]=>
+  string(19) "commerce équitable"
+  [92]=>
+  string(7) "compost"
+  [93]=>
+  string(10) "compostage"
+  [94]=>
+  string(9) "composter"
+  [95]=>
+  string(10) "composteur"
+  [96]=>
+  string(23) "composteur d'extérieur"
+  [97]=>
+  string(23) "composteur d'intérieur"
+  [98]=>
+  string(17) "composteur urbain"
+  [99]=>
+  string(27) "lombricompost, vermicompost"
+  [100]=>
+  string(60) "conduit d'eau, conduits d'eauconduite d'eau, conduites d'eau"
+  [101]=>
+  string(12) "conservation"
+  [102]=>
+  string(11) "contaminant"
+  [103]=>
+  string(23) "contaminé, contaminée"
+  [104]=>
+  string(10) "contaminer"
+  [105]=>
+  string(10) "contaminer"
+  [106]=>
+  string(20) "contrôle biologique"
+  [107]=>
+  string(30) "agents de contrôle biologique"
+  [108]=>
+  string(72) "Convention-Cadre des Nations Unies sur le Changement Climatique (CCNUCC)"
+  [109]=>
+  string(45) "Convention sur la Diversité Biologique (CDB)"
+  [110]=>
+  string(18) "croissance durable"
+  [111]=>
+  string(7) "cryosol"
+  [112]=>
+  string(7) "culture"
+  [113]=>
+  string(7) "culture"
+  [114]=>
+  string(22) "cultures d'exportation"
+  [115]=>
+  string(16) "cuve de digestat"
+  [116]=>
+  string(17) "cuve de digestion"
+  [117]=>
+  string(28) "cuve de digestion anaérobie"
+  [118]=>
+  string(11) "cuve à eau"
+  [119]=>
+  string(20) "cuve de fermentation"
+  [120]=>
+  string(16) "cycle du carbone"
+  [121]=>
+  string(14) "cycle de l'eau"
+  [122]=>
+  string(9) "décharge"
+  [123]=>
+  string(12) "déboisement"
+  [124]=>
+  string(8) "déchets"
+  [125]=>
+  string(16) "déchets animaux"
+  [126]=>
+  string(16) "déchets du bois"
+  [127]=>
+  string(18) "déchets chimiques"
+  [128]=>
+  string(24) "déchets d'une décharge"
+  [129]=>
+  string(20) "déchets industriels"
+  [130]=>
+  string(16) "déchets ligneux"
+  [131]=>
+  string(18) "déchets ménagers"
+  [132]=>
+  string(19) "déchets organiques"
+  [133]=>
+  string(32) "déchets organiques putrescibles"
+  [134]=>
+  string(20) "déchets radioactifs"
+  [135]=>
+  string(14) "déforestation"
+  [136]=>
+  string(24) "défrichagedéfrichement"
+  [137]=>
+  string(48) "défrichage des forêtsdéfrichement des forêts"
+  [138]=>
+  string(25) "dépendance énergétique"
+  [139]=>
+  string(12) "déperdition"
+  [140]=>
+  string(32) "déperdition de la biodiversité"
+  [141]=>
+  string(7) "désert"
+  [142]=>
+  string(16) "désertification"
+  [143]=>
+  string(15) "se désertifier"
+  [144]=>
+  string(11) "dessalement"
+  [145]=>
+  string(22) "développement durable"
+  [146]=>
+  string(54) "développement du territoiredéveloppement territorial"
+  [147]=>
+  string(8) "digestat"
+  [148]=>
+  string(5) "digue"
+  [149]=>
+  string(18) "dioxyde de carbone"
+  [150]=>
+  string(21) "distribution de l'eau"
+  [151]=>
+  string(10) "diversité"
+  [152]=>
+  string(22) "diversité génétique"
+  [153]=>
+  string(7) "dragage"
+  [154]=>
+  string(42) "draguer (la boue, une rivière, un chenal)"
+  [155]=>
+  string(8) "drainage"
+  [156]=>
+  string(15) "droits de l'eau"
+  [157]=>
+  string(11) "durabilité"
+  [158]=>
+  string(28) "durabilité environnementale"
+  [159]=>
+  string(7) "durable"
+  [160]=>
+  string(28) "modèles durables émergents"
+  [161]=>
+  string(30) "durablementde manière durable"
+  [162]=>
+  string(3) "eau"
+  [163]=>
+  string(14) "eau biologique"
+  [164]=>
+  string(34) "eau contaminée, eaux contaminées"
+  [165]=>
+  string(12) "eau courante"
+  [166]=>
+  string(25) "eau de crue, eaux de crue"
+  [167]=>
+  string(32) "eau domestique, eaux domestiques"
+  [168]=>
+  string(9) "eau douce"
+  [169]=>
+  string(28) "eau fluviale, eaux fluviales"
+  [170]=>
+  string(27) "eau de fonte, eaux de fonte"
+  [171]=>
+  string(11) "eau gazeuse"
+  [172]=>
+  string(21) "eau gazeuse naturelle"
+  [173]=>
+  string(15) "eau non gazeuse"
+  [174]=>
+  string(22) "eau grise, eaux grises"
+  [175]=>
+  string(14) "eau ménagère"
+  [176]=>
+  string(45) "eau ménagère usée, eaux ménagères usées"
+  [177]=>
+  string(10) "eau de mer"
+  [178]=>
+  string(13) "eau minérale"
+  [179]=>
+  string(21) "eau minérale gazeuse"
+  [180]=>
+  string(31) "eau minérale gazeuse naturelle"
+  [181]=>
+  string(23) "eau minérale naturelle"
+  [182]=>
+  string(25) "eau d'orage, eaux d'orage"
+  [183]=>
+  string(13) "eau ordinaire"
+  [184]=>
+  string(9) "eau plate"
+  [185]=>
+  string(27) "eau de pluie, eaux de pluie"
+  [186]=>
+  string(28) "eau polluée, eaux polluées"
+  [187]=>
+  string(11) "eau potable"
+  [188]=>
+  string(15) "eau non potable"
+  [189]=>
+  string(24) "eau propre, eaux propres"
+  [190]=>
+  string(20) "eau pure, eaux pures"
+  [191]=>
+  string(34) "eau résiduaire, eaux résiduaires"
+  [192]=>
+  string(14) "eau du robinet"
+  [193]=>
+  string(43) "eau de ruissellement, eaux de ruissellement"
+  [194]=>
+  string(20) "eau sale, eaux sales"
+  [195]=>
+  string(10) "eau salée"
+  [196]=>
+  string(30) "eau saumâtre, eaux saumâtres"
+  [197]=>
+  string(34) "eau souterraine, eaux souterraines"
+  [198]=>
+  string(30) "eau stagnante, eaux stagnantes"
+  [199]=>
+  string(31) "eau de surface, eaux de surface"
+  [200]=>
+  string(26) "eau trouble, eaux troubles"
+  [201]=>
+  string(13) "eaux troubles"
+  [202]=>
+  string(48) "eau usagée, eaux usagéeseau usée, eaux usées"
+  [203]=>
+  string(45) "eau usée ménagère, eaux usées ménagères"
+  [204]=>
+  string(22) "eau vanne, eaux vannes"
+  [205]=>
+  string(20) "eau vive, eaux vives"
+  [206]=>
+  string(16) "éco-agriculture"
+  [207]=>
+  string(10) "éco-audit"
+  [208]=>
+  string(8) "écocide"
+  [209]=>
+  string(8) "écocide"
+  [210]=>
+  string(15) "éco-conception"
+  [211]=>
+  string(19) "éco-développement"
+  [212]=>
+  string(14) "éco-industrie"
+  [213]=>
+  string(9) "écologie"
+  [214]=>
+  string(11) "écologique"
+  [215]=>
+  string(11) "écologique"
+  [216]=>
+  string(22) "conscience écologique"
+  [217]=>
+  string(56) "prise de conscience écologique(« passage au vert »)"
+  [218]=>
+  string(11) "écologiste"
+  [219]=>
+  string(21) "économie symbiotique"
+  [220]=>
+  string(16) "économies d'eau"
+  [221]=>
+  string(21) "économies d'énergie"
+  [222]=>
+  string(17) "économiser l'eau"
+  [223]=>
+  string(22) "économiser l'énergie"
+  [224]=>
+  string(12) "écoquartier"
+  [225]=>
+  string(11) "écorégion"
+  [226]=>
+  string(12) "écosystème"
+  [227]=>
+  string(17) "agro-écosystème"
+  [228]=>
+  string(15) "écosystémique"
+  [229]=>
+  string(11) "écoulement"
+  [230]=>
+  string(19) "écoulement de vase"
+  [231]=>
+  string(8) "écozone"
+  [232]=>
+  string(14) "effet de serre"
+  [233]=>
+  string(8) "effluent"
+  [234]=>
+  string(6) "égout"
+  [235]=>
+  string(35) "éléments indispensables à la vie"
+  [236]=>
+  string(18) "élément nutritif"
+  [237]=>
+  string(8) "émettre"
+  [238]=>
+  string(9) "émission"
+  [239]=>
+  string(32) "empreinte carbone, bilan carbone"
+  [240]=>
+  string(21) "empreinte écologique"
+  [241]=>
+  string(8) "énergie"
+  [242]=>
+  string(23) "énergie de la biomasse"
+  [243]=>
+  string(18) "énergie éolienne"
+  [244]=>
+  string(16) "énergie fossile"
+  [245]=>
+  string(22) "énergie géothermique"
+  [246]=>
+  string(60) "énergie de la houleénergie houlomotriceénergie des vagues"
+  [247]=>
+  string(20) "énergie hydraulique"
+  [248]=>
+  string(41) "énergie des maréesénergie marémotrice"
+  [249]=>
+  string(32) "énergie marineénergie des mers"
+  [250]=>
+  string(19) "énergie nucléaire"
+  [251]=>
+  string(17) "énergie primaire"
+  [252]=>
+  string(39) "énergie de récupération des déchets"
+  [253]=>
+  string(21) "énergie renouvelable"
+  [254]=>
+  string(16) "énergie solaire"
+  [255]=>
+  string(60) "énergie des vaguesénergie de la houleénergie houlomotrice"
+  [256]=>
+  string(14) "énergie verte"
+  [257]=>
+  string(7) "engrais"
+  [258]=>
+  string(16) "engrais chimique"
+  [259]=>
+  string(17) "engrais organique"
+  [260]=>
+  string(32) "entreprise de distribution d'eau"
+  [261]=>
+  string(13) "environnement"
+  [262]=>
+  string(21) "environnement aérien"
+  [263]=>
+  string(22) "environnement agricole"
+  [264]=>
+  string(23) "environnement aquatique"
+  [265]=>
+  string(23) "environnement forestier"
+  [266]=>
+  string(22) "environnement herbacé"
+  [267]=>
+  string(19) "environnement marin"
+  [268]=>
+  string(22) "environnement prairial"
+  [269]=>
+  string(44) "environnement rupestreenvironnement rupicole"
+  [270]=>
+  string(23) "environnement terrestre"
+  [271]=>
+  string(24) "environnement torrentiel"
+  [272]=>
+  string(20) "environnement urbain"
+  [273]=>
+  string(33) "environnemental, environnementale"
+  [274]=>
+  string(19) "environnementaliste"
+  [275]=>
+  string(18) "éolien, éolienne"
+  [276]=>
+  string(9) "éolienne"
+  [277]=>
+  string(10) "épuration"
+  [278]=>
+  string(7) "épurer"
+  [279]=>
+  string(7) "éroder"
+  [280]=>
+  string(9) "s'éroder"
+  [281]=>
+  string(8) "érosion"
+  [282]=>
+  string(17) "espèce, espèces"
+  [283]=>
+  string(40) "espèce protégée, espèces protégées"
+  [284]=>
+  string(12) "être humain"
+  [285]=>
+  string(56) "évacuation des eaux usagéesévacuation des eaux usées"
+  [286]=>
+  string(22) "évaluation des terres"
+  [287]=>
+  string(40) "évaluation de la performance des terres"
+  [288]=>
+  string(10) "évolution"
+  [289]=>
+  string(25) "exposition aux radiations"
+  [290]=>
+  string(22) "exposition aux risques"
+  [291]=>
+  string(10) "extinction"
+  [292]=>
+  string(5) "faune"
+  [293]=>
+  string(14) "faune et flore"
+  [294]=>
+  string(12) "fermentation"
+  [295]=>
+  string(9) "fermenter"
+  [296]=>
+  string(10) "filtration"
+  [297]=>
+  string(7) "filtrer"
+  [298]=>
+  string(5) "flore"
+  [299]=>
+  string(19) "forces de la nature"
+  [300]=>
+  string(6) "forêt"
+  [301]=>
+  string(31) "forêt à courte rotation (TCR)"
+  [302]=>
+  string(23) "forêt tropicale humide"
+  [303]=>
+  string(13) "formes de vie"
+  [304]=>
+  string(18) "fossé de drainage"
+  [305]=>
+  string(6) "friche"
+  [306]=>
+  string(19) "friche industrielle"
+  [307]=>
+  string(14) "friche urbaine"
+  [308]=>
+  string(3) "gaz"
+  [309]=>
+  string(27) "gaz à effet de serre (GES)"
+  [310]=>
+  string(11) "gaz naturel"
+  [311]=>
+  string(14) "gaz de schiste"
+  [312]=>
+  string(10) "gazomètre"
+  [313]=>
+  string(18) "génie écologique"
+  [314]=>
+  string(47) "génie environnementalgénie de l'environnement"
+  [315]=>
+  string(15) "géomorphologie"
+  [316]=>
+  string(16) "gestion de l'eau"
+  [317]=>
+  string(19) "gestion des friches"
+  [318]=>
+  string(18) "gestion des terres"
+  [319]=>
+  string(58) "gouvernance environnementalegouvernance de l'environnement"
+  [320]=>
+  string(20) "gouvernance de l'eau"
+  [321]=>
+  string(23) "gouvernance des risques"
+  [322]=>
+  string(8) "granulé"
+  [323]=>
+  string(64) "Groupe d'experts International sur l'Évolution du Climat (GIEC)"
+  [324]=>
+  string(9) "habitable"
+  [325]=>
+  string(7) "habitat"
+  [326]=>
+  string(10) "habitation"
+  [327]=>
+  string(19) "herbacé, herbacée"
+  [328]=>
+  string(9) "héritage"
+  [329]=>
+  string(27) "l'héritage de l'évolution"
+  [330]=>
+  string(9) "humanité"
+  [331]=>
+  string(9) "humidité"
+  [332]=>
+  string(18) "humidité des sols"
+  [333]=>
+  string(10) "hydroponie"
+  [334]=>
+  string(12) "hydroponique"
+  [335]=>
+  string(14) "impacts diffus"
+  [336]=>
+  string(22) "impact environnemental"
+  [337]=>
+  string(26) "implantation d'habitations"
+  [338]=>
+  string(14) "infrastructure"
+  [339]=>
+  string(23) "grandes infrastructures"
+  [340]=>
+  string(23) "ingénierie écologique"
+  [341]=>
+  string(58) "ingénierie environnementaleingénierie de l'environnement"
+  [342]=>
+  string(23) "ingénieur en écologie"
+  [343]=>
+  string(29) "ingénieur de l'environnement"
+  [344]=>
+  string(10) "inondation"
+  [345]=>
+  string(10) "inondation"
+  [346]=>
+  string(7) "inonder"
+  [347]=>
+  string(27) "installation de dessalement"
+  [348]=>
+  string(39) "installation de traitement des déchets"
+  [349]=>
+  string(35) "installation de traitement de l'eau"
+  [350]=>
+  string(86) "installation de traitement des eaux usagéesinstallation de traitement des eaux usées"
+  [351]=>
+  string(24) "installations sanitaires"
+  [352]=>
+  string(11) "irradiation"
+  [353]=>
+  string(8) "irradier"
+  [354]=>
+  string(29) "jouissance de droits fonciers"
+  [355]=>
+  string(25) "ligne de partage des eaux"
+  [356]=>
+  string(17) "ligneux, ligneuse"
+  [357]=>
+  string(25) "non ligneux, non ligneuse"
+  [358]=>
+  string(17) "lignocellulosique"
+  [359]=>
+  string(19) "littoral, littorale"
+  [360]=>
+  string(8) "littoral"
+  [361]=>
+  string(27) "lombricompost, vermicompost"
+  [362]=>
+  string(7) "maladie"
+  [363]=>
+  string(9) "marécage"
+  [364]=>
+  string(25) "marécageux, marécageuse"
+  [365]=>
+  string(20) "matière non vivante"
+  [366]=>
+  string(18) "matière organique"
+  [367]=>
+  string(16) "matière vivante"
+  [368]=>
+  string(20) "matières organiques"
+  [369]=>
+  string(20) "matières premières"
+  [370]=>
+  string(31) "matières premières herbacées"
+  [371]=>
+  string(46) "Mécanisme pour un Développement Propre (MDP)"
+  [372]=>
+  string(43) "merzlota, permafrostpergélisol, pergelisol"
+  [373]=>
+  string(8) "méthane"
+  [374]=>
+  string(14) "méthanisation"
+  [375]=>
+  string(11) "méthaniser"
+  [376]=>
+  string(6) "milieu"
+  [377]=>
+  string(14) "milieu aérien"
+  [378]=>
+  string(15) "milieu agricole"
+  [379]=>
+  string(16) "milieu aquatique"
+  [380]=>
+  string(16) "milieu forestier"
+  [381]=>
+  string(15) "milieu herbacé"
+  [382]=>
+  string(12) "milieu marin"
+  [383]=>
+  string(15) "milieu prairial"
+  [384]=>
+  string(30) "milieu rupestremilieu rupicole"
+  [385]=>
+  string(16) "milieu terrestre"
+  [386]=>
+  string(17) "milieu torrentiel"
+  [387]=>
+  string(13) "milieu urbain"
+  [388]=>
+  string(28) "modèles durables émergents"
+  [389]=>
+  string(19) "monoxyde de carbone"
+  [390]=>
+  string(14) "moulin à vent"
+  [391]=>
+  string(40) "nappe d'eau souterrainenappe souterraine"
+  [392]=>
+  string(17) "nappe phréatique"
+  [393]=>
+  string(16) "niveau trophique"
+  [394]=>
+  string(9) "organique"
+  [395]=>
+  string(75) "Organisation des Nations Unies pour l’alimentation et l'agriculture (FAO)"
+  [396]=>
+  string(9) "organisme"
+  [397]=>
+  string(40) "organisme génétiquement modifié (OGM)"
+  [398]=>
+  string(16) "organisme vivant"
+  [399]=>
+  string(29) "parc éolienparc d'éoliennes"
+  [400]=>
+  string(36) "partage équitable (des bénéfices)"
+  [401]=>
+  string(9) "particule"
+  [402]=>
+  string(16) "passage à faune"
+  [403]=>
+  string(10) "patrimoine"
+  [404]=>
+  string(18) "patrimoine naturel"
+  [405]=>
+  string(30) "pays en voie de développement"
+  [406]=>
+  string(7) "paysage"
+  [407]=>
+  string(22) "performance des terres"
+  [408]=>
+  string(43) "pergélisol, pergelisolpermafrost, merzlota"
+  [409]=>
+  string(9) "pesticide"
+  [410]=>
+  string(9) "pesticide"
+  [411]=>
+  string(33) "phyto-épuration, phytoépuration"
+  [412]=>
+  string(37) "phyto-remédiation, phytoremédiation"
+  [413]=>
+  string(37) "phyto-restauration, phytorestauration"
+  [414]=>
+  string(16) "plaine inondable"
+  [415]=>
+  string(64) "plan d'aménagement du territoireplan d'aménagement territorial"
+  [416]=>
+  string(29) "plan d'utilisation des terres"
+  [417]=>
+  string(88) "planification de l'aménagement du territoireplanification de l'aménagement territorial"
+  [418]=>
+  string(41) "planification de l'utilisation des terres"
+  [419]=>
+  string(26) "politique environnementale"
+  [420]=>
+  string(8) "polluant"
+  [421]=>
+  string(8) "polluant"
+  [422]=>
+  string(17) "pollué, polluée"
+  [423]=>
+  string(7) "polluer"
+  [424]=>
+  string(19) "pollueur, pollueuse"
+  [425]=>
+  string(9) "pollution"
+  [426]=>
+  string(14) "anti-pollution"
+  [427]=>
+  string(18) "pollution de l'air"
+  [428]=>
+  string(50) "pollution de l'atmosphèrepollution atmosphérique"
+  [429]=>
+  string(18) "pollution de l'eau"
+  [430]=>
+  string(7) "potable"
+  [431]=>
+  string(11) "non potable"
+  [432]=>
+  string(40) "préservation de la faune et de la flore"
+  [433]=>
+  string(32) "préservation de l'environnement"
+  [434]=>
+  string(26) "préservation de la nature"
+  [435]=>
+  string(11) "prévention"
+  [436]=>
+  string(23) "prévention des risques"
+  [437]=>
+  string(18) "prise accidentelle"
+  [438]=>
+  string(20) "production vivrière"
+  [439]=>
+  string(25) "produit dérivé agricole"
+  [440]=>
+  string(28) "produit dérivé alimentaire"
+  [441]=>
+  string(48) "produit dérivé de l'industrie agro-alimentaire"
+  [442]=>
+  string(33) "produits de première nécessité"
+  [443]=>
+  string(57) "Programme des Nations Unies pour l’Environnement (PNUE)"
+  [444]=>
+  string(29) "protection de l'environnement"
+  [445]=>
+  string(37) "protection de la faune et de la flore"
+  [446]=>
+  string(23) "protection de la nature"
+  [447]=>
+  string(5) "puits"
+  [448]=>
+  string(12) "purification"
+  [449]=>
+  string(8) "purifier"
+  [450]=>
+  string(17) "qualité de l'air"
+  [451]=>
+  string(25) "qualité de l'atmosphère"
+  [452]=>
+  string(36) "qualité de l'eau, qualité des eaux"
+  [453]=>
+  string(19) "racines culturelles"
+  [454]=>
+  string(9) "radiation"
+  [455]=>
+  string(25) "exposition aux radiations"
+  [456]=>
+  string(23) "radioactif, radioactive"
+  [457]=>
+  string(31) "réchauffement de l'atmosphère"
+  [458]=>
+  string(25) "réchauffement climatique"
+  [459]=>
+  string(26) "réchauffement planétaire"
+  [460]=>
+  string(8) "récolte"
+  [461]=>
+  string(8) "récolte"
+  [462]=>
+  string(9) "récolter"
+  [463]=>
+  string(19) "récoltes agricoles"
+  [464]=>
+  string(14) "récupération"
+  [465]=>
+  string(27) "récupération des déchets"
+  [466]=>
+  string(28) "récupération de l'énergie"
+  [467]=>
+  string(11) "récupérer"
+  [468]=>
+  string(10) "recyclable"
+  [469]=>
+  string(14) "non recyclable"
+  [470]=>
+  string(9) "recyclage"
+  [471]=>
+  string(22) "recyclage des déchets"
+  [472]=>
+  string(47) "capacité de recyclagepossibilité de recyclage"
+  [473]=>
+  string(8) "recycler"
+  [474]=>
+  string(14) "rejeter (dans)"
+  [475]=>
+  string(12) "rejet (dans)"
+  [476]=>
+  string(6) "rejets"
+  [477]=>
+  string(12) "renouvelable"
+  [478]=>
+  string(23) "renouvelé, renouvelée"
+  [479]=>
+  string(10) "renouveler"
+  [480]=>
+  string(17) "réseau trophique"
+  [481]=>
+  string(17) "réservoir à eau"
+  [482]=>
+  string(7) "résidu"
+  [483]=>
+  string(8) "résidus"
+  [484]=>
+  string(19) "résidus forestiers"
+  [485]=>
+  string(22) "résidus des récoltes"
+  [486]=>
+  string(22) "résidus de traitement"
+  [487]=>
+  string(26) "respect de l'environnement"
+  [488]=>
+  string(28) "résilience face aux risques"
+  [489]=>
+  string(23) "respect environnemental"
+  [490]=>
+  string(9) "ressource"
+  [491]=>
+  string(23) "ressources génétiques"
+  [492]=>
+  string(21) "ressources naturelles"
+  [493]=>
+  string(18) "rigole de drainage"
+  [494]=>
+  string(6) "risque"
+  [495]=>
+  string(22) "exposition aux risques"
+  [496]=>
+  string(28) "résilience face aux risques"
+  [497]=>
+  string(49) "risque environnementalrisque pour l'environnement"
+  [498]=>
+  string(13) "ruissellement"
+  [499]=>
+  string(31) "société de distribution d'eau"
+  [500]=>
+  string(3) "sol"
+  [501]=>
+  string(3) "sol"
+  [502]=>
+  string(3) "sol"
+  [503]=>
+  string(12) "sol agricole"
+  [504]=>
+  string(11) "sol fertile"
+  [505]=>
+  string(13) "sol horticole"
+  [506]=>
+  string(11) "sol pollué"
+  [507]=>
+  string(8) "sous-sol"
+  [508]=>
+  string(29) "station d'épuration de l'eau"
+  [509]=>
+  string(30) "station de filtration de l'eau"
+  [510]=>
+  string(36) "station d'incinération des déchets"
+  [511]=>
+  string(32) "station de purification de l'eau"
+  [512]=>
+  string(34) "station de traitement des déchets"
+  [513]=>
+  string(30) "station de traitement de l'eau"
+  [514]=>
+  string(76) "station de traitement des eaux usagéesstation de traitement des eaux usées"
+  [515]=>
+  string(17) "stockage de l'eau"
+  [516]=>
+  string(15) "surface boisée"
+  [517]=>
+  string(8) "symbiose"
+  [518]=>
+  string(11) "symbiotique"
+  [519]=>
+  string(32) "taillis à courte rotation (TCR)"
+  [520]=>
+  string(7) "terrain"
+  [521]=>
+  string(7) "terrain"
+  [522]=>
+  string(7) "terrain"
+  [523]=>
+  string(16) "terrain agricole"
+  [524]=>
+  string(17) "terrain horticole"
+  [525]=>
+  string(27) "terrain humide(zone humide)"
+  [526]=>
+  string(19) "terrain marécageux"
+  [527]=>
+  string(15) "terrain pollué"
+  [528]=>
+  string(5) "terre"
+  [529]=>
+  string(5) "terre"
+  [530]=>
+  string(5) "terre"
+  [531]=>
+  string(14) "terre agricole"
+  [532]=>
+  string(15) "terre horticole"
+  [533]=>
+  string(15) "la Terre, Terre"
+  [534]=>
+  string(5) "terre"
+  [535]=>
+  string(32) "terre agricole, terres agricoles"
+  [536]=>
+  string(14) "terres arables"
+  [537]=>
+  string(18) "terres exploitées"
+  [538]=>
+  string(42) "terres inexploitéesterres non exploitées"
+  [539]=>
+  string(29) "terres humides(zones humides)"
+  [540]=>
+  string(20) "terres marécageuses"
+  [541]=>
+  string(16) "terres polluées"
+  [542]=>
+  string(10) "territoire"
+  [543]=>
+  string(19) "territoire agricole"
+  [544]=>
+  string(17) "territoire urbain"
+  [545]=>
+  string(20) "territoire urbanisé"
+  [546]=>
+  string(25) "territorial, territoriale"
+  [547]=>
+  string(65) "tonne équivalent pétrole, tonnes équivalent pétrole(tep, TEP)"
+  [548]=>
+  string(19) "traitement de l'eau"
+  [549]=>
+  string(28) "traitement des eaux usagées"
+  [550]=>
+  string(24) "transformer en granulés"
+  [551]=>
+  string(27) "transformation en granulés"
+  [552]=>
+  string(27) "transformation des habitats"
+  [553]=>
+  string(9) "trophique"
+  [554]=>
+  string(12) "urbanisation"
+  [555]=>
+  string(21) "urbanisé, urbanisée"
+  [556]=>
+  string(9) "urbaniser"
+  [557]=>
+  string(9) "urbanisme"
+  [558]=>
+  string(17) "urbanisme durable"
+  [559]=>
+  string(15) "usine à biogaz"
+  [560]=>
+  string(20) "usine de dessalement"
+  [561]=>
+  string(27) "usine d'épuration de l'eau"
+  [562]=>
+  string(28) "usine de filtration de l'eau"
+  [563]=>
+  string(30) "usine de purification de l'eau"
+  [564]=>
+  string(34) "usine d'incinération des déchets"
+  [565]=>
+  string(32) "usine de traitement des déchets"
+  [566]=>
+  string(28) "usine de traitement de l'eau"
+  [567]=>
+  string(72) "usine de traitement des eaux usagéesusine de traitement des eaux usées"
+  [568]=>
+  string(60) "utilisation du solutilisation des solsutilisation des terres"
+  [569]=>
+  string(41) "planification de l'utilisation des terres"
+  [570]=>
+  string(58) "Utilisation des Terres, leur Changement et la Forêt(UTCF)"
+  [571]=>
+  string(25) "valorisation des déchets"
+  [572]=>
+  string(4) "vase"
+  [573]=>
+  string(12) "végétation"
+  [574]=>
+  string(27) "vermicompost, lombricompost"
+  [575]=>
+  string(11) "vert, verte"
+  [576]=>
+  string(7) "vivable"
+  [577]=>
+  string(26) "xéripaysage, xéropaysage"
+  [578]=>
+  string(32) "xéripaysagisme, xéropaysagisme"
+  [579]=>
+  string(8) "xérique"
+  [580]=>
+  string(10) "zone aride"
+  [581]=>
+  string(14) "zone côtière"
+  [582]=>
+  string(11) "zone humide"
+  [583]=>
+  string(13) "zone inondée"
+  [584]=>
+  string(13) "zone peuplée"
+  [585]=>
+  string(19) "zone très peuplée"
+  [586]=>
+  string(11) "zone rurale"
+  [587]=>
+  string(12) "zone urbaine"
+}
+array(596) {
+  [0]=>
+  string(16) "water conveyance"
+  [1]=>
+  string(25) "biological control agents"
+  [2]=>
+  string(21) "symbiotic agriculture"
+  [3]=>
+  string(13) "agroecosystem"
+  [4]=>
+  string(7) "aerobic"
+  [5]=>
+  string(3) "air"
+  [6]=>
+  string(16) "contaminated air"
+  [7]=>
+  string(12) "polluted air"
+  [8]=>
+  string(8) "pure air"
+  [9]=>
+  string(25) "health food, organic food"
+  [10]=>
+  string(18) "food compatibility"
+  [11]=>
+  string(200) "spatial planning (and development)territorial planning (and development)town and country planning (and development)urban and country planning (and development)urban and land planning (and development)"
+  [12]=>
+  string(9) "anaerobic"
+  [13]=>
+  string(47) "life cycle analysis, life cycle assessment(LCA)"
+  [14]=>
+  string(14) "anti-pollution"
+  [15]=>
+  string(12) "water supply"
+  [16]=>
+  string(10) "aquaponics"
+  [17]=>
+  string(9) "aquaponic"
+  [18]=>
+  string(23) "aquiferouswater-bearing"
+  [19]=>
+  string(7) "aquifer"
+  [20]=>
+  string(18) "to dewaterto drain"
+  [21]=>
+  string(18) "dewateringdraining"
+  [22]=>
+  string(10) "atmosphere"
+  [23]=>
+  string(19) "polluted atmosphere"
+  [24]=>
+  string(11) "atmospheric"
+  [25]=>
+  string(3) "dam"
+  [26]=>
+  string(5) "basin"
+  [27]=>
+  string(15) "catchment basin"
+  [28]=>
+  string(14) "drainage basin"
+  [29]=>
+  string(9) "watershed"
+  [30]=>
+  string(11) "water basin"
+  [31]=>
+  string(11) "river basin"
+  [32]=>
+  string(11) "urban basin"
+  [33]=>
+  string(10) "well-being"
+  [34]=>
+  string(94) "the well-being of humanitythe well-being of humankindthe well-being of mankindhuman well-being"
+  [35]=>
+  string(17) "carbon accounting"
+  [36]=>
+  string(16) "carbon footprint"
+  [37]=>
+  string(12) "bioaggressor"
+  [38]=>
+  string(13) "bioaggressive"
+  [39]=>
+  string(13) "bioaggression"
+  [40]=>
+  string(7) "biofuel"
+  [41]=>
+  string(10) "bioclimate"
+  [42]=>
+  string(7) "biofuel"
+  [43]=>
+  string(12) "biodiversity"
+  [44]=>
+  string(10) "bioeconomy"
+  [45]=>
+  string(9) "bioenergy"
+  [46]=>
+  string(10) "bioethanol"
+  [47]=>
+  string(9) "biofilter"
+  [48]=>
+  string(6) "biogas"
+  [49]=>
+  string(7) "biology"
+  [50]=>
+  string(10) "biological"
+  [51]=>
+  string(7) "organic"
+  [52]=>
+  string(7) "biomass"
+  [53]=>
+  string(13) "urban biomass"
+  [54]=>
+  string(5) "biome"
+  [55]=>
+  string(10) "biomimetic"
+  [56]=>
+  string(23) "biomimetics, biomimicry"
+  [57]=>
+  string(9) "biosphere"
+  [58]=>
+  string(7) "biotope"
+  [59]=>
+  string(4) "wood"
+  [60]=>
+  string(4) "wood"
+  [61]=>
+  string(19) "woodland, woodlands"
+  [62]=>
+  string(5) "woody"
+  [63]=>
+  string(8) "fuelwood"
+  [64]=>
+  string(3) "mud"
+  [65]=>
+  string(5) "muddy"
+  [66]=>
+  string(10) "water pipe"
+  [67]=>
+  string(20) "catchment (of water)"
+  [68]=>
+  string(42) "carbon (dioxide) capture and storage (CCS)"
+  [69]=>
+  string(4) "fuel"
+  [70]=>
+  string(11) "fossil fuel"
+  [71]=>
+  string(15) "trophic cascade"
+  [72]=>
+  string(35) "natural disasternatural catastrophe"
+  [73]=>
+  string(47) "GB & US: coal power plantGB: coal power station"
+  [74]=>
+  string(105) "GB & US: cogeneration power plant, cogeneration plantGB: cogeneration power station, cogeneration station"
+  [75]=>
+  string(37) "GB & US: power plantGB: power station"
+  [76]=>
+  string(47) "GB & US: wind power plantGB: wind power station"
+  [77]=>
+  string(65) "GB & US: hydroelectric power plantGB: hydroelectric power station"
+  [78]=>
+  string(57) "GB & US: hydraulic power plantGB: hydraulic power station"
+  [79]=>
+  string(49) "GB & US: tidal power plantGB: tidal power station"
+  [80]=>
+  string(53) "GB & US: nuclear power plantGB: nuclear power station"
+  [81]=>
+  string(53) "GB & US: thermal power plantGB: thermal power station"
+  [82]=>
+  string(30) "building siteconstruction site"
+  [83]=>
+  string(10) "food chain"
+  [84]=>
+  string(29) "climate changeclimatic change"
+  [85]=>
+  string(10) "water tank"
+  [86]=>
+  string(7) "climate"
+  [87]=>
+  string(8) "climatic"
+  [88]=>
+  string(41) "cogenerationcombined heat and power (CHP)"
+  [89]=>
+  string(11) "combustible"
+  [90]=>
+  string(4) "fuel"
+  [91]=>
+  string(11) "fossil fuel"
+  [92]=>
+  string(25) "equitable tradefair trade"
+  [93]=>
+  string(7) "compost"
+  [94]=>
+  string(10) "composting"
+  [95]=>
+  string(10) "to compost"
+  [96]=>
+  string(22) "composter, compost bin"
+  [97]=>
+  string(38) "outdoor composter, outdoor compost bin"
+  [98]=>
+  string(36) "indoor composter, indoor compost bin"
+  [99]=>
+  string(34) "urban composter, urban compost bin"
+  [100]=>
+  string(26) "worm compost, vermicompost"
+  [101]=>
+  string(66) "water conduit, water conduitswater pipe, water pipes, water piping"
+  [102]=>
+  string(24) "conservationpreservation"
+  [103]=>
+  string(11) "contaminant"
+  [104]=>
+  string(12) "contaminated"
+  [105]=>
+  string(14) "to contaminate"
+  [106]=>
+  string(14) "to contaminate"
+  [107]=>
+  string(18) "biological control"
+  [108]=>
+  string(25) "biological control agents"
+  [109]=>
+  string(62) "United Nations Framework Convention on Climate Change (UNFCCC)"
+  [110]=>
+  string(40) "Convention on Biological Diversity (CBD)"
+  [111]=>
+  string(18) "sustainable growth"
+  [112]=>
+  string(7) "cryosol"
+  [113]=>
+  string(18) "cultivationgrowing"
+  [114]=>
+  string(4) "crop"
+  [115]=>
+  string(12) "export crops"
+  [116]=>
+  string(14) "digestate tank"
+  [117]=>
+  string(21) "digester tankdigester"
+  [118]=>
+  string(41) "anaerobic digester tankanaerobic digester"
+  [119]=>
+  string(10) "water tank"
+  [120]=>
+  string(26) "fermentation tankfermenter"
+  [121]=>
+  string(12) "carbon cycle"
+  [122]=>
+  string(27) "hydrologic cyclewater cycle"
+  [123]=>
+  string(8) "landfill"
+  [124]=>
+  string(13) "deforestation"
+  [125]=>
+  string(19) "wastewaste material"
+  [126]=>
+  string(12) "animal waste"
+  [127]=>
+  string(42) "waste wood, wastewoodwood waste, woodwaste"
+  [128]=>
+  string(14) "chemical waste"
+  [129]=>
+  string(14) "landfill waste"
+  [130]=>
+  string(16) "industrial waste"
+  [131]=>
+  string(42) "waste wood, wastewoodwood waste, woodwaste"
+  [132]=>
+  string(14) "domestic waste"
+  [133]=>
+  string(13) "organic waste"
+  [134]=>
+  string(33) "biowasteputrescible organic waste"
+  [135]=>
+  string(17) "radioactive waste"
+  [136]=>
+  string(13) "deforestation"
+  [137]=>
+  string(17) "clearanceclearing"
+  [138]=>
+  string(31) "forest clearanceforest clearing"
+  [139]=>
+  string(17) "energy dependence"
+  [140]=>
+  string(4) "loss"
+  [141]=>
+  string(17) "biodiversity loss"
+  [142]=>
+  string(6) "desert"
+  [143]=>
+  string(15) "desertification"
+  [144]=>
+  string(21) "to turn into a desert"
+  [145]=>
+  string(12) "desalination"
+  [146]=>
+  string(23) "sustainable development"
+  [147]=>
+  string(125) "spatial developmentterritorial developmenttown and country developmenturban and country developmenturban and land development"
+  [148]=>
+  string(9) "digestate"
+  [149]=>
+  string(4) "dike"
+  [150]=>
+  string(4) "dyke"
+  [151]=>
+  string(14) "carbon dioxide"
+  [152]=>
+  string(30) "water distributionwater supply"
+  [153]=>
+  string(9) "diversity"
+  [154]=>
+  string(17) "genetic diversity"
+  [155]=>
+  string(8) "dredging"
+  [156]=>
+  string(33) "to dredge (mud, a river, a canal)"
+  [157]=>
+  string(8) "drainage"
+  [158]=>
+  string(12) "water rights"
+  [159]=>
+  string(14) "sustainability"
+  [160]=>
+  string(28) "environmental sustainability"
+  [161]=>
+  string(11) "sustainable"
+  [162]=>
+  string(27) "emerging sustainable models"
+  [163]=>
+  string(11) "sustainably"
+  [164]=>
+  string(5) "water"
+  [165]=>
+  string(16) "biological water"
+  [166]=>
+  string(18) "contaminated water"
+  [167]=>
+  string(31) "water from the mainsmains water"
+  [168]=>
+  string(23) "floodwater, floodwaters"
+  [169]=>
+  string(15) "domestic sewage"
+  [170]=>
+  string(11) "fresh water"
+  [171]=>
+  string(24) "fluvial waterriver water"
+  [172]=>
+  string(9) "meltwater"
+  [173]=>
+  string(15) "sparkling water"
+  [174]=>
+  string(23) "natural sparkling water"
+  [175]=>
+  string(11) "still water"
+  [176]=>
+  string(16) "greywatersullage"
+  [177]=>
+  string(14) "domestic water"
+  [178]=>
+  string(15) "domestic sewage"
+  [179]=>
+  string(9) "sea water"
+  [180]=>
+  string(13) "mineral water"
+  [181]=>
+  string(23) "sparkling mineral water"
+  [182]=>
+  string(31) "natural sparkling mineral water"
+  [183]=>
+  string(21) "natural mineral water"
+  [184]=>
+  string(11) "storm water"
+  [185]=>
+  string(11) "plain water"
+  [186]=>
+  string(11) "still water"
+  [187]=>
+  string(9) "rainwater"
+  [188]=>
+  string(14) "polluted water"
+  [189]=>
+  string(42) "drinkable waterdrinking waterpotable water"
+  [190]=>
+  string(52) "not drinking waterundrinkable waternot potable water"
+  [191]=>
+  string(11) "clean water"
+  [192]=>
+  string(10) "pure water"
+  [193]=>
+  string(10) "wastewater"
+  [194]=>
+  string(9) "tap water"
+  [195]=>
+  string(42) "run-off, runoffrun-off water, runoff water"
+  [196]=>
+  string(11) "slop, slops"
+  [197]=>
+  string(10) "salt water"
+  [198]=>
+  string(14) "brackish water"
+  [199]=>
+  string(62) "groundwaterunderground watersubsurface watersubterranean water"
+  [200]=>
+  string(31) "stagnant water, stagnant waters"
+  [201]=>
+  string(13) "surface water"
+  [202]=>
+  string(12) "cloudy water"
+  [203]=>
+  string(15) "troubled waters"
+  [204]=>
+  string(35) "sewagesludgesewage sludgewastewater"
+  [205]=>
+  string(15) "domestic sewage"
+  [206]=>
+  string(10) "blackwater"
+  [207]=>
+  string(11) "white water"
+  [208]=>
+  string(14) "ecoagriculture"
+  [209]=>
+  string(9) "eco-audit"
+  [210]=>
+  string(8) "ecocidal"
+  [211]=>
+  string(7) "ecocide"
+  [212]=>
+  string(9) "ecodesign"
+  [213]=>
+  string(14) "ecodevelopment"
+  [214]=>
+  string(12) "eco-industry"
+  [215]=>
+  string(7) "ecology"
+  [216]=>
+  string(56) "eco-friendlyenvironment-friendlyenvironmentally-friendly"
+  [217]=>
+  string(10) "ecological"
+  [218]=>
+  string(20) "ecological awareness"
+  [219]=>
+  string(8) "greening"
+  [220]=>
+  string(32) "ecologistenvironmental scientist"
+  [221]=>
+  string(17) "symbiotic economy"
+  [222]=>
+  string(31) "water conservationwater savings"
+  [223]=>
+  string(33) "energy conservationenergy savings"
+  [224]=>
+  string(30) "to conserve waterto save water"
+  [225]=>
+  string(32) "to conserve energyto save energy"
+  [226]=>
+  string(11) "ecodistrict"
+  [227]=>
+  string(9) "ecoregion"
+  [228]=>
+  string(9) "ecosystem"
+  [229]=>
+  string(13) "agroecosystem"
+  [230]=>
+  string(11) "ecosystemic"
+  [231]=>
+  string(15) "runoff, run-off"
+  [232]=>
+  string(25) "silt runoff, silt run-off"
+  [233]=>
+  string(7) "ecozone"
+  [234]=>
+  string(17) "greenhouse effect"
+  [235]=>
+  string(8) "effluent"
+  [236]=>
+  string(5) "sewer"
+  [237]=>
+  string(19) "necessities of life"
+  [238]=>
+  string(8) "nutrient"
+  [239]=>
+  string(20) "to emit, to give off"
+  [240]=>
+  string(8) "emission"
+  [241]=>
+  string(16) "carbon footprint"
+  [242]=>
+  string(20) "ecological footprint"
+  [243]=>
+  string(11) "energypower"
+  [244]=>
+  string(27) "biomass energybiomass power"
+  [245]=>
+  string(21) "wind energywind power"
+  [246]=>
+  string(25) "fossil energyfossil power"
+  [247]=>
+  string(33) "geothermal energygeothermal power"
+  [248]=>
+  string(21) "wave energywave power"
+  [249]=>
+  string(70) "hydraulic energy, hydro energyhydraulic power, hydro power, hydropower"
+  [250]=>
+  string(23) "tidal energytidal power"
+  [251]=>
+  string(48) "marine energymarine powerocean energyocean power"
+  [252]=>
+  string(27) "nuclear energynuclear power"
+  [253]=>
+  string(27) "primary energyprimary power"
+  [254]=>
+  string(41) "waste recovery energywaste recovery power"
+  [255]=>
+  string(31) "renewable energyrenewable power"
+  [256]=>
+  string(23) "solar energysolar power"
+  [257]=>
+  string(21) "wave energywave power"
+  [258]=>
+  string(23) "green energygreen power"
+  [259]=>
+  string(10) "fertilizer"
+  [260]=>
+  string(19) "chemical fertilizer"
+  [261]=>
+  string(18) "organic fertilizer"
+  [262]=>
+  string(26) "water distribution company"
+  [263]=>
+  string(26) "water distribution utility"
+  [264]=>
+  string(11) "environment"
+  [265]=>
+  string(39) "aerial environmentair-based environment"
+  [266]=>
+  string(24) "agricultural environment"
+  [267]=>
+  string(42) "aquatic environmentwater-based environment"
+  [268]=>
+  string(18) "forest environment"
+  [269]=>
+  string(22) "herbaceous environment"
+  [270]=>
+  string(18) "marine environment"
+  [271]=>
+  string(22) "meadowland environment"
+  [272]=>
+  string(16) "rock environment"
+  [273]=>
+  string(45) "terrestrial environmentland-based environment"
+  [274]=>
+  string(22) "torrential environment"
+  [275]=>
+  string(17) "urban environment"
+  [276]=>
+  string(13) "environmental"
+  [277]=>
+  string(16) "environmentalist"
+  [278]=>
+  string(11) "aeolianwind"
+  [279]=>
+  string(12) "wind turbine"
+  [280]=>
+  string(12) "purification"
+  [281]=>
+  string(9) "to purify"
+  [282]=>
+  string(8) "to erode"
+  [283]=>
+  string(37) "to erodeto erode awayto become eroded"
+  [284]=>
+  string(7) "erosion"
+  [285]=>
+  string(7) "species"
+  [286]=>
+  string(17) "protected species"
+  [287]=>
+  string(11) "human being"
+  [288]=>
+  string(71) "sewage disposalsludge disposalsewage sludge disposalwastewater disposal"
+  [289]=>
+  string(30) "land evaluationland assessment"
+  [290]=>
+  string(54) "land performance evaluationland performance assessment"
+  [291]=>
+  string(9) "evolution"
+  [292]=>
+  string(22) "exposure to radiations"
+  [293]=>
+  string(36) "exposure to risksexposure to hazards"
+  [294]=>
+  string(10) "extinction"
+  [295]=>
+  string(5) "fauna"
+  [296]=>
+  string(23) "fauna and florawildlife"
+  [297]=>
+  string(12) "fermentation"
+  [298]=>
+  string(10) "to ferment"
+  [299]=>
+  string(10) "filtration"
+  [300]=>
+  string(9) "to filter"
+  [301]=>
+  string(5) "flora"
+  [302]=>
+  string(16) "forces of nature"
+  [303]=>
+  string(6) "forest"
+  [304]=>
+  string(56) "short-rotation forest (SRF)short-rotation forestry (SRF)"
+  [305]=>
+  string(11) "rain forest"
+  [306]=>
+  string(13) "forms of life"
+  [307]=>
+  string(14) "drainage ditch"
+  [308]=>
+  string(9) "wasteland"
+  [309]=>
+  string(20) "industrial wasteland"
+  [310]=>
+  string(15) "urban wasteland"
+  [311]=>
+  string(3) "gas"
+  [312]=>
+  string(45) "greenhouse gas (GHG), greenhouse gases (GHGs)"
+  [313]=>
+  string(11) "natural gas"
+  [314]=>
+  string(22) "shale gas, shale gases"
+  [315]=>
+  string(19) "gas holdergasometer"
+  [316]=>
+  string(22) "ecological engineering"
+  [317]=>
+  string(25) "environmental engineering"
+  [318]=>
+  string(23) "geomorphologyland forms"
+  [319]=>
+  string(16) "water management"
+  [320]=>
+  string(20) "wasteland management"
+  [321]=>
+  string(15) "land management"
+  [322]=>
+  string(53) "environmental governancegovernance of the environment"
+  [323]=>
+  string(35) "water governancegovernance of water"
+  [324]=>
+  string(34) "risk governancegovernance of risks"
+  [325]=>
+  string(6) "pellet"
+  [326]=>
+  string(48) "Intergovernmental Panel on Climate Change (IPCC)"
+  [327]=>
+  string(9) "habitable"
+  [328]=>
+  string(7) "habitat"
+  [329]=>
+  string(8) "dwelling"
+  [330]=>
+  string(10) "herbaceous"
+  [331]=>
+  string(6) "legacy"
+  [332]=>
+  string(23) "the legacy of evolution"
+  [333]=>
+  string(24) "humanityhumankindmankind"
+  [334]=>
+  string(8) "moisture"
+  [335]=>
+  string(13) "soil moisture"
+  [336]=>
+  string(11) "hydroponics"
+  [337]=>
+  string(10) "hydroponic"
+  [338]=>
+  string(14) "diffuse impact"
+  [339]=>
+  string(20) "environmental impact"
+  [340]=>
+  string(10) "settlement"
+  [341]=>
+  string(14) "infrastructure"
+  [342]=>
+  string(42) "large infrastructuresmajor infrastructures"
+  [343]=>
+  string(22) "ecological engineering"
+  [344]=>
+  string(25) "environmental engineering"
+  [345]=>
+  string(19) "ecological engineer"
+  [346]=>
+  string(22) "environmental engineer"
+  [347]=>
+  string(8) "flooding"
+  [348]=>
+  string(5) "flood"
+  [349]=>
+  string(8) "to flood"
+  [350]=>
+  string(21) "desalination facility"
+  [351]=>
+  string(49) "waste processing facilitywaste treatment facility"
+  [352]=>
+  string(49) "water processing facilitywater treatment facility"
+  [353]=>
+  string(59) "wastewater processing facilitywastewater treatment facility"
+  [354]=>
+  string(10) "sanitation"
+  [355]=>
+  string(11) "irradiation"
+  [356]=>
+  string(12) "to irradiate"
+  [357]=>
+  string(11) "land tenure"
+  [358]=>
+  string(9) "watershed"
+  [359]=>
+  string(5) "woody"
+  [360]=>
+  string(9) "non-woody"
+  [361]=>
+  string(15) "lignocellulosic"
+  [362]=>
+  string(7) "coastal"
+  [363]=>
+  string(19) "coastcoastal region"
+  [364]=>
+  string(26) "worm compost, vermicompost"
+  [365]=>
+  string(7) "disease"
+  [366]=>
+  string(12) "marsh, swamp"
+  [367]=>
+  string(14) "marshy, swampy"
+  [368]=>
+  string(36) "non-living materialnon-living matter"
+  [369]=>
+  string(30) "organic materialorganic matter"
+  [370]=>
+  string(28) "living materialliving matter"
+  [371]=>
+  string(39) "organic materialsorganic matterorganics"
+  [372]=>
+  string(23) "raw materialsfeedstocks"
+  [373]=>
+  string(21) "herbaceous feedstocks"
+  [374]=>
+  string(33) "Clean Development Mechanism (CDM)"
+  [375]=>
+  string(10) "permafrost"
+  [376]=>
+  string(7) "methane"
+  [377]=>
+  string(24) "methanationmethanization"
+  [378]=>
+  string(12) "to methanize"
+  [379]=>
+  string(11) "environment"
+  [380]=>
+  string(39) "aerial environmentair-based environment"
+  [381]=>
+  string(24) "agricultural environment"
+  [382]=>
+  string(42) "aquatic environmentwater-based environment"
+  [383]=>
+  string(18) "forest environment"
+  [384]=>
+  string(22) "herbaceous environment"
+  [385]=>
+  string(18) "marine environment"
+  [386]=>
+  string(22) "meadowland environment"
+  [387]=>
+  string(16) "rock environment"
+  [388]=>
+  string(45) "terrestrial environmentland-based environment"
+  [389]=>
+  string(22) "torrential environment"
+  [390]=>
+  string(17) "urban environment"
+  [391]=>
+  string(27) "emerging sustainable models"
+  [392]=>
+  string(15) "carbon monoxide"
+  [393]=>
+  string(8) "windmill"
+  [394]=>
+  string(25) "ground water, groundwater"
+  [395]=>
+  string(50) "ground water, groundwaterphreatic tablewater table"
+  [396]=>
+  string(13) "trophic level"
+  [397]=>
+  string(7) "organic"
+  [398]=>
+  string(61) "Food and Agriculture Organization of the United Nations (FAO)"
+  [399]=>
+  string(8) "organism"
+  [400]=>
+  string(35) "genetically modified organism (GMO)"
+  [401]=>
+  string(15) "living organism"
+  [402]=>
+  string(26) "wind farmwind turbine farm"
+  [403]=>
+  string(57) "equitable sharing (of benefits)fair sharing (of benefits)"
+  [404]=>
+  string(31) "particleparticles, particulates"
+  [405]=>
+  string(14) "fauna crossing"
+  [406]=>
+  string(8) "heritage"
+  [407]=>
+  string(16) "natural heritage"
+  [408]=>
+  string(40) "developing country, developing countries"
+  [409]=>
+  string(9) "landscape"
+  [410]=>
+  string(16) "land performance"
+  [411]=>
+  string(10) "permafrost"
+  [412]=>
+  string(10) "pesticidal"
+  [413]=>
+  string(9) "pesticide"
+  [414]=>
+  string(37) "phyto-purification, phytopurification"
+  [415]=>
+  string(35) "phyto-remediation, phytoremediation"
+  [416]=>
+  string(35) "phyto-restoration, phytorestoration"
+  [417]=>
+  string(10) "floodplain"
+  [418]=>
+  string(250) "spatial plan, spatial development planterritorial plan, territorial development plantown and country plan, town and country development planurban and country plan, urban and country development planurban and land plan, urban and land development plan"
+  [419]=>
+  string(13) "land-use plan"
+  [420]=>
+  string(290) "spatial planning, spatial development planningterritorial planning, territorial development planningtown and country planning, town and country development planningurban and country planning, urban and country development planningurban and land planning, urban and land development planning"
+  [421]=>
+  string(17) "land-use planning"
+  [422]=>
+  string(20) "environmental policy"
+  [423]=>
+  string(9) "polluting"
+  [424]=>
+  string(9) "pollutant"
+  [425]=>
+  string(8) "polluted"
+  [426]=>
+  string(10) "to pollute"
+  [427]=>
+  string(8) "polluter"
+  [428]=>
+  string(9) "pollution"
+  [429]=>
+  string(14) "anti-pollution"
+  [430]=>
+  string(13) "air pollution"
+  [431]=>
+  string(21) "atmospheric pollution"
+  [432]=>
+  string(15) "water pollution"
+  [433]=>
+  string(16) "drinkablepotable"
+  [434]=>
+  string(24) "not drinkablenot potable"
+  [435]=>
+  string(42) "wildlife preservationwildlife conservation"
+  [436]=>
+  string(48) "environment preservationenvironment conservation"
+  [437]=>
+  string(38) "nature preservationnature conservation"
+  [438]=>
+  string(10) "prevention"
+  [439]=>
+  string(34) "risk preventionprevention of risks"
+  [440]=>
+  string(7) "bycatch"
+  [441]=>
+  string(15) "food production"
+  [442]=>
+  string(23) "agricultural by-product"
+  [443]=>
+  string(15) "food by-product"
+  [444]=>
+  string(37) "food processing (industry) by-product"
+  [445]=>
+  string(19) "necessities of life"
+  [446]=>
+  string(43) "United Nations Environment Programme (UNEP)"
+  [447]=>
+  string(152) "environment protection, environmental protectionenvironment preservation, environmental preservationenvironment conservation, environmental conservation"
+  [448]=>
+  string(61) "wildlife protectionwildlife preservationwildlife conservation"
+  [449]=>
+  string(55) "nature protectionnature preservationnature conservation"
+  [450]=>
+  string(4) "well"
+  [451]=>
+  string(12) "purification"
+  [452]=>
+  string(9) "to purify"
+  [453]=>
+  string(31) "quality of (the) airair quality"
+  [454]=>
+  string(44) "quality of the atmosphereatmospheric quality"
+  [455]=>
+  string(35) "quality of (the) waterwater quality"
+  [456]=>
+  string(14) "cultural roots"
+  [457]=>
+  string(9) "radiation"
+  [458]=>
+  string(22) "exposure to radiations"
+  [459]=>
+  string(11) "radioactive"
+  [460]=>
+  string(19) "atmospheric warming"
+  [461]=>
+  string(15) "climate warming"
+  [462]=>
+  string(14) "global warming"
+  [463]=>
+  string(7) "harvest"
+  [464]=>
+  string(13) "crop, harvest"
+  [465]=>
+  string(10) "to harvest"
+  [466]=>
+  string(18) "agricultural crops"
+  [467]=>
+  string(8) "recovery"
+  [468]=>
+  string(14) "waste recovery"
+  [469]=>
+  string(15) "energy recovery"
+  [470]=>
+  string(11) "to recovery"
+  [471]=>
+  string(10) "recyclable"
+  [472]=>
+  string(14) "non-recyclable"
+  [473]=>
+  string(9) "recycling"
+  [474]=>
+  string(15) "waste recycling"
+  [475]=>
+  string(13) "recyclability"
+  [476]=>
+  string(10) "to recycle"
+  [477]=>
+  string(19) "to discharge (into)"
+  [478]=>
+  string(16) "discharge (into)"
+  [479]=>
+  string(16) "discharge, waste"
+  [480]=>
+  string(9) "renewable"
+  [481]=>
+  string(7) "renewed"
+  [482]=>
+  string(8) "to renew"
+  [483]=>
+  string(15) "trophic network"
+  [484]=>
+  string(10) "water tank"
+  [485]=>
+  string(7) "residue"
+  [486]=>
+  string(16) "residuesresidual"
+  [487]=>
+  string(30) "forest residuesforest residual"
+  [488]=>
+  string(26) "crop residuescrop residual"
+  [489]=>
+  string(38) "processing residuesprocessing residual"
+  [490]=>
+  string(27) "respect for the environment"
+  [491]=>
+  string(40) "resilience to risksresilience to hazards"
+  [492]=>
+  string(21) "environmental respect"
+  [493]=>
+  string(8) "resource"
+  [494]=>
+  string(17) "genetic resources"
+  [495]=>
+  string(17) "natural resources"
+  [496]=>
+  string(5) "swale"
+  [497]=>
+  string(10) "riskhazard"
+  [498]=>
+  string(36) "exposure to risksexposure to hazards"
+  [499]=>
+  string(40) "resilience to risksresilience to hazards"
+  [500]=>
+  string(38) "environmental riskenvironmental hazard"
+  [501]=>
+  string(15) "runoff, run-off"
+  [502]=>
+  string(26) "water distribution company"
+  [503]=>
+  string(26) "water distribution utility"
+  [504]=>
+  string(6) "ground"
+  [505]=>
+  string(11) "soil, earth"
+  [506]=>
+  string(10) "land, soil"
+  [507]=>
+  string(17) "agricultural soil"
+  [508]=>
+  string(12) "fertile soil"
+  [509]=>
+  string(18) "horticultural soil"
+  [510]=>
+  string(13) "polluted soil"
+  [511]=>
+  string(7) "subsoil"
+  [512]=>
+  string(26) "water purification station"
+  [513]=>
+  string(24) "water filtration station"
+  [514]=>
+  string(26) "waste incineration station"
+  [515]=>
+  string(26) "water purification station"
+  [516]=>
+  string(47) "waste processing stationwaste treatment station"
+  [517]=>
+  string(47) "water processing stationwater treatment station"
+  [518]=>
+  string(106) "sewage processing stationsewage treatment stationwastewater processing stationwastewater treatment station"
+  [519]=>
+  string(13) "water storage"
+  [520]=>
+  string(8) "woodland"
+  [521]=>
+  string(9) "symbiosis"
+  [522]=>
+  string(9) "symbiotic"
+  [523]=>
+  string(28) "short-rotation coppice (SRC)"
+  [524]=>
+  string(12) "ground, soil"
+  [525]=>
+  string(4) "land"
+  [526]=>
+  string(25) "piece of landplot of land"
+  [527]=>
+  string(25) "agricultural landfarmland"
+  [528]=>
+  string(18) "horticultural land"
+  [529]=>
+  string(7) "wetland"
+  [530]=>
+  string(20) "marshland, everglade"
+  [531]=>
+  string(13) "polluted land"
+  [532]=>
+  string(11) "earth, soil"
+  [533]=>
+  string(11) "earth, soil"
+  [534]=>
+  string(4) "land"
+  [535]=>
+  string(17) "agricultural soil"
+  [536]=>
+  string(18) "horticultural soil"
+  [537]=>
+  string(16) "the Earth, Earth"
+  [538]=>
+  string(6) "ground"
+  [539]=>
+  string(25) "agricultural landfarmland"
+  [540]=>
+  string(8) "farmland"
+  [541]=>
+  string(14) "developed land"
+  [542]=>
+  string(16) "undeveloped land"
+  [543]=>
+  string(17) "wetland, wetlands"
+  [544]=>
+  string(20) "marshland, everglade"
+  [545]=>
+  string(13) "polluted land"
+  [546]=>
+  string(9) "territory"
+  [547]=>
+  string(25) "agricultural landfarmland"
+  [548]=>
+  string(10) "urban land"
+  [549]=>
+  string(14) "urbanized land"
+  [550]=>
+  string(15) "territorialland"
+  [551]=>
+  string(59) "tonne of oil equivalent, tonnes of oil equivalent(toe, TOE)"
+  [552]=>
+  string(31) "water processingwater treatment"
+  [553]=>
+  string(41) "wastewater processingwastewater treatment"
+  [554]=>
+  string(12) "to pelletize"
+  [555]=>
+  string(13) "pelletization"
+  [556]=>
+  string(54) "habitat changehabitat conversionhabitat transformation"
+  [557]=>
+  string(7) "trophic"
+  [558]=>
+  string(12) "urbanization"
+  [559]=>
+  string(9) "urbanized"
+  [560]=>
+  string(11) "to urbanize"
+  [561]=>
+  string(31) "town (planning and) development"
+  [562]=>
+  string(32) "urban (planning and) development"
+  [563]=>
+  string(31) "city (planning and) development"
+  [564]=>
+  string(43) "sustainable town (planning and) development"
+  [565]=>
+  string(91) "sustainable urban (planning and) developmentUS: sustainable city (planning and) development"
+  [566]=>
+  string(43) "sustainable city (planning and) development"
+  [567]=>
+  string(37) "biogas millbiogas plantbiogas station"
+  [568]=>
+  string(18) "desalination plant"
+  [569]=>
+  string(24) "water purification plant"
+  [570]=>
+  string(22) "water filtration plant"
+  [571]=>
+  string(24) "water purification plant"
+  [572]=>
+  string(24) "waste incineration plant"
+  [573]=>
+  string(43) "waste processing plantwaste treatment plant"
+  [574]=>
+  string(43) "water processing plantwater treatment plant"
+  [575]=>
+  string(98) "sewage processing plantsewage treatment plantwastewater processing plantwastewater treatment plant"
+  [576]=>
+  string(8) "land use"
+  [577]=>
+  string(17) "land-use planning"
+  [578]=>
+  string(46) "Land Use, Land-Use Change and Forestry(LULUCF)"
+  [579]=>
+  string(14) "waste recovery"
+  [580]=>
+  string(12) "silt, sludge"
+  [581]=>
+  string(10) "vegetation"
+  [582]=>
+  string(26) "vermicompost, worm compost"
+  [583]=>
+  string(5) "green"
+  [584]=>
+  string(7) "livable"
+  [585]=>
+  string(26) "xeriscape, xeric landscape"
+  [586]=>
+  string(30) "xeriscaping, xeric landscaping"
+  [587]=>
+  string(5) "xeric"
+  [588]=>
+  string(20) "arid area, arid zone"
+  [589]=>
+  string(26) "coastal area, coastal zone"
+  [590]=>
+  string(31) "humid area, humid zone, wetland"
+  [591]=>
+  string(26) "flooded area, flooded zone"
+  [592]=>
+  string(30) "populated area, populated zone"
+  [593]=>
+  string(44) "highly populated area, highly populated zone"
+  [594]=>
+  string(22) "rural area, rural zone"
+  [595]=>
+  string(22) "urban area, urban zone"
+}

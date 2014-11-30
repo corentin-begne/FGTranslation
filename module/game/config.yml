@@ -1,0 +1,12 @@
+play:
+  javascript:
+    - jquery.min.js
+    - tools/animationHelper.js
+    - class/gameManager.js
+    - play.js
+  stylesheet: 
+    - play.css
+list:
+  javascript:
+
+  stylesheet: 
