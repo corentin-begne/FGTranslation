@@ -1,4 +1,4 @@
-<div class="categoryContainer">
+<div class="categoryContainer hide">
 	<div class="title">
 			<?=$categoryTitle?>
 	</div><!--

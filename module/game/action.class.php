@@ -54,5 +54,26 @@
 				route::redirectByName('login');
 			}
 		}
+		public function irregular(){
+			if(userManager::isAuthentificated()){
+				$this->gameData = ImportIrregular::get();
+				$result = UserGameResult::get(array(
+					":userId"=>$_SESSION["userData"]["id"],
+					":categoryId"=>0,
+					":gameId"=>$_POST['gameId'],
+					":lang"=>$_POST["lang"],
+					":difficultyId"=>$_POST['difficultyId']
+				));
+				$this->gameId = $_POST['gameId'];
+				$this->gameInfos = Game::getInfos(array(":gameId"=>$_POST['gameId'], ":difficultyId"=>$_POST['difficultyId']));
+				$this->points = (!$result) ? 0 : $result["points"];
+				$category = ImportCategory::getName(array(":categoryId"=>$_POST['categoryId']));
+				$this->title = $this->gameInfos['name'];
+				$this->categoryId = 0;
+				$this->difficultyId = $_POST['difficultyId'];
+			}else{
+				route::redirectByName('login');
+			}
+		}
 	}
 ?>

@@ -7,6 +7,11 @@ gamePlay:
   module: game
   action: play
   layout: default
+gameIrregular:
+  url: game/irregular
+  module: game
+  action: irregular
+  layout: default
 gameList:
   url: game/list
   module: game

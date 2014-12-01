@@ -1,9 +1,11 @@
 var animationHelper = new AnimationHelper();
 var pass = true;
 var basepath;
-function changeCategory(direction){
-	var cat = $('.category:not(.hide)');
-	var newCat = (direction === "left") ? cat.prev(".category") : cat.next(".category");
+var targetPath = "/game/play";
+var gameId;
+function changeCat(direction, className){
+	var cat = $(className+':not(.hide)');
+	var newCat = (direction === "left") ? cat.prev(className) : cat.next(className);
 	if(newCat.length > 0){
 		animationHelper.hide(cat, function(){
 			animationHelper.show(newCat);
@@ -24,15 +26,29 @@ $.extend(
 $(document).ready(function(){
 	basepath = $("body").attr("basepath");
 	$(".left, .right").mousedown(function(){
-		changeCategory($(this).attr("class"));
-	});
-	$(".category").mousedown(function(){
-		animationHelper.hide($(this).parent(), function(){
-			animationHelper.show($(".gameContainer"));
-		});
+		changeCat($(this).attr("class"), ".category");
 	});
 	$(".game").mousedown(function(){
-		$(".optionContainer .title").text($('.category:not(.hide)').attr("name"));		
+		gameId = $(this).attr("id");
+		if(parseInt($(this).attr("id")) === 2){
+			//window.location.href = "/"+basepath+"/game/irregular";
+			$(".langContainer").hide();
+			$(".optionContainer .title").text($(this).text());
+			targetPath = "/game/irregular";		
+			$(".optionContainer").parent().removeClass("hide");			
+			setTimeout(function(){
+				$(".optionContainer").css({
+					top:"calc(50% - "+($(".optionContainer").outerHeight()/2)+"px)"
+				});
+			}, 50);
+		}else{
+			animationHelper.hide($(this).parent(), function(){
+				animationHelper.show($(".categoryContainer"));
+			});
+		}
+	});
+	$(".category").mousedown(function(){
+		$(".optionContainer .title").text($(this).attr("name"));		
 		$(".optionContainer").parent().removeClass("hide");
 		setTimeout(function(){
 			$(".optionContainer").css({
@@ -55,11 +71,11 @@ $(document).ready(function(){
 	$(".play").mousedown(function(){
 		if(pass){
 			pass = false;
-			$.redirectPost("/"+basepath+"/game/play", {
+			$.redirectPost("/"+basepath+targetPath, {
 				lang:$(".lang.selected").attr("id"),
 				difficultyId:$(".difficulty.selected").attr("id"),
 				categoryId:$('.category:not(.hide)').attr("id"),
-				gameId:$('.game:not(.hide)').attr("id")
+				gameId:gameId
 			});
 		}
 	});

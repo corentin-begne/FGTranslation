@@ -6,6 +6,12 @@ play:
     - play.js
   stylesheet: 
     - play.css
+irregular:
+  javascript:
+    - jquery.min.js
+    - irregular.js
+  stylesheet: 
+    - irregular.css
 list:
   javascript:
 
