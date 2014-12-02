@@ -1,14 +1,20 @@
 play:
   javascript:
     - jquery.min.js
+    - extend.js
     - tools/animationHelper.js
-    - class/gameManager.js
+    - class/game.js
+    - class/translationManager.js
     - play.js
   stylesheet: 
     - play.css
 irregular:
   javascript:
     - jquery.min.js
+    - extend.js
+    - tools/animationHelper.js
+    - class/game.js
+    - class/irregularManager.js
     - irregular.js
   stylesheet: 
     - irregular.css

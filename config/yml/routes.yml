@@ -12,10 +12,6 @@ gameIrregular:
   module: game
   action: irregular
   layout: default
-gameList:
-  url: game/list
-  module: game
-  action: getList
 loginUser:
   url: login/user
   module: login

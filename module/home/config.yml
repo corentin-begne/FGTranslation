@@ -1,6 +1,7 @@
 index:
   javascript:
     - jquery.min.js
+    - extend.js
     - tools/animationHelper.js
     - home.js
   stylesheet:

@@ -1,16 +1,5 @@
 <?
 	class gameAction{
-		public function getList(){
-			if(userManager::isAuthentificated()){
-				$this->categories = ImportCategory::get();
-				foreach($this->categories as $category){
-					Import::update(array(':id'=>$category["id"], ':name'=>$category["name"]));
-				}
-				die;
-			}else{
-				route::redirectByName('login');
-			}
-		}
 		public function result(){
 			$result = array('success'=>true);
 			$userResult = UserGameResult::get(array(
@@ -66,6 +55,7 @@
 				));
 				$this->gameId = $_POST['gameId'];
 				$this->gameInfos = Game::getInfos(array(":gameId"=>$_POST['gameId'], ":difficultyId"=>$_POST['difficultyId']));
+				$this->lang = $_POST['lang'];
 				$this->points = (!$result) ? 0 : $result["points"];
 				$category = ImportCategory::getName(array(":categoryId"=>$_POST['categoryId']));
 				$this->title = $this->gameInfos['name'];
