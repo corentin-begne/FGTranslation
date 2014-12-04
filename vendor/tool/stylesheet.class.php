@@ -8,7 +8,7 @@
 			}
 		}
 		public static function get($css){
-			return '<link href="/'.route::BASEPATH.'/'.self::BASEPATH.'/'.$css.'" rel="stylesheet" type="text/css" >';
+			return '<link href="'.route::$basePath.'/'.self::BASEPATH.'/'.$css.'" rel="stylesheet" type="text/css" >';
 		}
 	}
 ?>

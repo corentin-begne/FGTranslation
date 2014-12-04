@@ -16,6 +16,11 @@ AnimationHelper.prototype.show = function(container, cb){
 		}
 	});
 }
+AnimationHelper.prototype.lose = function(cb){
+	$(".heart:last .eyeOpen").remove();
+	$(".heart:last .eyeClose").remove();
+	this.heartDie($(".heart:last .stand"), cb);	
+}
 AnimationHelper.prototype.hide = function(container, cb){
 	container.css({
 		opacity:1
@@ -34,7 +39,7 @@ AnimationHelper.prototype.hide = function(container, cb){
 AnimationHelper.prototype.getRandomInt = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-AnimationHelper.prototype.heartDie = function(container){
+AnimationHelper.prototype.heartDie = function(container, cb){
 	var max = 4;
 	var currentAnim = 1;
 	var timer = setInterval(function(){
@@ -42,8 +47,11 @@ AnimationHelper.prototype.heartDie = function(container){
 			container.attr("class", "die"+currentAnim);
 			currentAnim++;
 		}else{
-			clearInterval(timer);
-			container.parent().remove();
+			clearInterval(timer);			
+			container.parent().remove();			
+			if(cb !== undefined){
+				cb();
+			}
 		}
 	}, 110);
 }

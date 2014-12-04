@@ -1,4 +1,10 @@
-host: localhost
-user: root
-db:	translation
-pass: root
+dev:
+  host: localhost
+  user: root
+  db:	translation
+  pass: root
+prod:
+  host: mysql5-3.720
+  user: bennetteroot
+  db: bennetteroot
+  pass: aZ6cfg8re2

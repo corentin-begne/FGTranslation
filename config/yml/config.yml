@@ -1,0 +1,4 @@
+dev:
+  path: /translation
+prod:
+  path: /

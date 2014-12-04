@@ -5,7 +5,7 @@
 
 		public static function getConnection(){
 			if(self::$pdoHandle === null){
-				$config = yaml_parse_file(requireCore::$basePath."/config/yml/db.yml");
+				$config = yaml_parse_file(requireCore::$basePath."/config/yml/db.yml")[ENV];
 			  	self::$pdoHandle = new PDO('mysql:dbname='.$config["db"].';host='.$config["host"].";charset=UTF8", $config["user"], $config["pass"], array(
 		  			PDO::ATTR_CASE => PDO::CASE_NATURAL, // keep orginal columns names
 		  			PDO::ATTR_PERSISTENT => true, // persistent conection

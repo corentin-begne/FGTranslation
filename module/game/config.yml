@@ -3,7 +3,7 @@ translation:
     - jquery.min.js
     - extend.js
     - tools/animationHelper.js
-    - class/game.js
+    - class/gameManager.js
     - class/translationManager.js
     - translation.js
   stylesheet: 
@@ -14,7 +14,7 @@ irregular:
     - jquery-ui-1.10.4.min.js
     - extend.js
     - tools/animationHelper.js
-    - class/game.js
+    - class/gameManager.js
     - class/irregularManager.js
     - irregular.js
   stylesheet: 

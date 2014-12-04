@@ -8,7 +8,7 @@
 			}
 		}
 		public static function get($js){
-			return '<script type="text/javascript" src="/'.route::BASEPATH.'/'.self::BASEPATH.'/'.$js.'"></script>';
+			return '<script type="text/javascript" src="'.route::$basePath.'/'.self::BASEPATH.'/'.$js.'"></script>';
 		}
 	}
 ?>

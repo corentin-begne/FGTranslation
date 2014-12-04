@@ -5,7 +5,7 @@
 		<?=stylesheet::includeCore()?>
 	</head>
 	<title><?=$title?></title>
-	<body basepath="<?=route::BASEPATH?>">
+	<body basepath="<?=route::$basePath?>">
 		<?=partial::includeCore("/backdrop")?>	
 		<div class="contentContainer">
         	<?=$content?>

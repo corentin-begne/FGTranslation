@@ -3,6 +3,7 @@ index:
     - jquery.min.js
     - extend.js
     - tools/animationHelper.js
+    - class/gameManager.js
     - home.js
   stylesheet:
     - home.css

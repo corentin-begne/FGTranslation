@@ -1,6 +1,4 @@
-var basepath;
 var irregularManager;
-$(document).ready(function(){
-	basepath = $("body").attr("basepath");		
+$(document).ready(function(){	
 	irregularManager = new IrregularManager(gameData);
 });

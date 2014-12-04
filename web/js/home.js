@@ -1,11 +1,11 @@
 var animationHelper = new AnimationHelper();
 var pass = true;
-var basepath;
-var targetPath = "/game/translation";
+var gameName = "translation";
 var gameId;
+var gameManager;
 function changeCat(direction, className){
 	var cat = $(className+':not(.hide)');
-	var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);
+	var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);	
 	if(newCat.length > 0){
 		animationHelper.hide(cat, function(){
 			animationHelper.show(newCat, function(){
@@ -15,7 +15,7 @@ function changeCat(direction, className){
 	}	
 }
 $(document).ready(function(){
-	basepath = $("body").attr("basepath");
+	gameManager = new GameManager();
 	$(".up, .down").mousedown(function(){
 		if(pass){
 			pass = false;
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		if(parseInt($(this).attr("id")) === 2){
 			$(".langContainer").hide();
 			$(".optionContainer .title").text($(this).text());
-			targetPath = "/game/irregular";		
+			gameName = "irregular";		
 			$(".optionContainer").parent().removeClass("hide");			
 			setTimeout(function(){
 				$(".optionContainer").css({
@@ -62,14 +62,11 @@ $(document).ready(function(){
 		}
 	});
 	$(".play").mousedown(function(){
-		if(pass){
-			pass = false;
-			$.redirectPost("/"+basepath+targetPath, {
-				lang:$(".lang.selected").attr("id"),
-				difficultyId:$(".difficulty.selected").attr("id"),
-				categoryId:$('.category:not(.hide)').attr("id"),
-				gameId:gameId
-			});
-		}
+		gameManager.go(gameName, {
+			lang:$(".lang.selected").attr("id"),
+			difficultyId:$(".difficulty.selected").attr("id"),
+			categoryId:$('.category:not(.hide)').attr("id"),
+			gameId:gameId
+		});
 	});
 });

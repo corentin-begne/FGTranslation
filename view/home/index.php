@@ -16,8 +16,8 @@
 		<div class="title"></div>
 		<div class="langContainer">
 			<div class="flagContainer">
-				<img id="en" class="lang selected" src="/<?=route::BASEPATH?>/images/flagEn.png" />
-				<img id="fr" class="lang" src="/<?=route::BASEPATH?>/images/flagFr.png" />
+				<img id="en" class="lang selected" src="<?=route::$basePath?>/images/flagEn.png" />
+				<img id="fr" class="lang" src="<?=route::$basePath?>/images/flagFr.png" />
 			</div>
 		</div>
 		<div class="difficultyContainer">

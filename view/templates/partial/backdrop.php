@@ -1,3 +1,3 @@
 <div class="backdrop hide">
-	<img src="/<?=route::BASEPATH?>/images/loader.gif" />
+	<img src="<?=route::$basePath?>/images/loader.gif" />
 </div>

@@ -8,11 +8,11 @@ $(document).ready(function(){
 		$.ajax({
 			type: "POST",
 			data:{name:$("#login").val()},
-			url: '/'+basepath+'/login/user',
+			url: basepath+'/login/user',
 			dataType:'json',
 			success: function(data){
 				if(data.success){
-					window.location.href = '/'+basepath;
+					window.location.href = basepath;
 				}
 			}
 		});		
