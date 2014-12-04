@@ -9,3 +9,8 @@ $.extend(
         $('<form action="'+location+'" method="POST">'+form+'</form>').appendTo('body').submit();
     }
 });
+$.extend($.expr[':'],{
+    isEmpty: function(el){
+        return $(el).val() === "";
+    }
+});

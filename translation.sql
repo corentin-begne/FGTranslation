@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le : Mar 02 Décembre 2014 à 00:47
+-- Généré le : Jeu 04 Décembre 2014 à 02:04
 -- Version du serveur: 5.5.40
 -- Version de PHP: 5.5.18-1+deb.sury.org~precise+1
 
@@ -3289,9 +3289,13 @@ CREATE TABLE IF NOT EXISTS `UserGameResult` (
 --
 
 INSERT INTO `UserGameResult` (`userId`, `categoryId`, `gameId`, `difficultyId`, `points`, `lang`) VALUES
+(1, 0, 2, 1, 5, 'en'),
+(1, 0, 2, 3, 0, 'en'),
 (1, 1, 1, 1, 1, 'fr'),
+(1, 1, 1, 3, 0, 'en'),
+(1, 2, 1, 1, 2, 'en'),
 (1, 2, 1, 3, 2, 'en'),
-(1, 3, 1, 2, 0, 'en'),
+(1, 6, 1, 3, 1, 'en'),
 (2, 4, 1, 1, 1, 'en');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

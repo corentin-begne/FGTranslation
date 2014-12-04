@@ -3,9 +3,9 @@ gameResult:
   module: game
   action: result
 gamePlay:
-  url: game/play
+  url: game/translation
   module: game
-  action: play
+  action: translation
   layout: default
 gameIrregular:
   url: game/irregular

@@ -1,26 +1,30 @@
 var animationHelper = new AnimationHelper();
 var pass = true;
 var basepath;
-var targetPath = "/game/play";
+var targetPath = "/game/translation";
 var gameId;
 function changeCat(direction, className){
 	var cat = $(className+':not(.hide)');
-	var newCat = (direction === "left") ? cat.prev(className) : cat.next(className);
+	var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);
 	if(newCat.length > 0){
 		animationHelper.hide(cat, function(){
-			animationHelper.show(newCat);
+			animationHelper.show(newCat, function(){
+				pass = true;
+			});
 		});
 	}	
 }
 $(document).ready(function(){
 	basepath = $("body").attr("basepath");
-	$(".left, .right").mousedown(function(){
-		changeCat($(this).attr("class"), ".category");
+	$(".up, .down").mousedown(function(){
+		if(pass){
+			pass = false;
+			changeCat($(this).attr("class"), ".category");
+		}
 	});
 	$(".game").mousedown(function(){
 		gameId = $(this).attr("id");
 		if(parseInt($(this).attr("id")) === 2){
-			//window.location.href = "/"+basepath+"/game/irregular";
 			$(".langContainer").hide();
 			$(".optionContainer .title").text($(this).text());
 			targetPath = "/game/irregular";		

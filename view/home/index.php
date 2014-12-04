@@ -1,15 +1,15 @@
 <div class="categoryContainer hide">
 	<div class="title">
 			<?=$categoryTitle?>
-	</div><!--
-	--><div class='left'><</div><!--
+	</div>
+	<div class='up'>S</div><!--
 	<? for($i=0 ; $i<count($categories); $i++): ?>
 		--><div name="<?=$categories[$i]['name']?>" id="<?=$categories[$i]['id']?>" class="category <?=($i>0) ? 'hide' : ''?>">
 			<?=$categories[$i]['name']?> (<?=$categories[$i]['nb']?>)
 		</div><!--
 	<? endfor; ?>
-	--><div class='right'>></div><!--
---></div>
+	--><div class='down'>T</div>
+</div>
 <?=partial::includeCore("game")?>
 <div class='backdrop hide'>
 	<div class='optionContainer'>

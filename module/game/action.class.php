@@ -9,7 +9,7 @@
 				":lang"=>$_POST["lang"],
 				":difficultyId"=>$_POST['difficultyId']
 			));
-			if(!$userResult || ((int)$userResult["points"] > 0 && (int)$userResult["points"] < (int)$_POST['points'])){
+			if(!$userResult || ((int)$_POST['points'] > 0 && (int)$userResult["points"] < (int)$_POST['points'])){
 				UserGameResult::insert(array(
 					":userId"=>$_SESSION["userData"]["id"],
 					":categoryId"=>$_POST['categoryId'],
@@ -21,7 +21,7 @@
 			}	
 			return json_encode($result);
 		}
-		public function play(){
+		public function translation(){
 			if(userManager::isAuthentificated()){
 				$this->gameData = Import::get(array(":categoryId"=>$_POST["categoryId"]));
 				$result = UserGameResult::get(array(
@@ -53,6 +53,11 @@
 					":lang"=>$_POST["lang"],
 					":difficultyId"=>$_POST['difficultyId']
 				));
+				$this->heads = array(
+					"french"=>"français", 
+					"english"=>"anglais", 
+					"preterit"=>"preterit", 
+					"past"=> "participe passé");
 				$this->gameId = $_POST['gameId'];
 				$this->gameInfos = Game::getInfos(array(":gameId"=>$_POST['gameId'], ":difficultyId"=>$_POST['difficultyId']));
 				$this->lang = $_POST['lang'];

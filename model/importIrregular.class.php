@@ -12,7 +12,7 @@
 		}
 		public static function get(){
 			pdoManager::prepare("
-				select french as fr, english as en, preterit, past from 
+				select * from 
 					ImportIrregular 
 				order by english asc
 			");

@@ -35,7 +35,7 @@ TranslationManager.prototype.init = function(){
 		window.location.href = "/"+basepath;
 	});
 	$(".replay").mousedown(function(){
-		$.redirectPost("/"+basepath+"/game/play", {
+		$.redirectPost("/"+basepath+"/game/translation", {
 			gameId:$(".gameContainer").attr("gameId"),
 			difficultyId:$(".gameContainer").attr("difficultyId"),
 			categoryId:$(".gameContainer").attr("categoryId"),
@@ -78,9 +78,11 @@ TranslationManager.prototype.check = function(){
 		this.audio = new Audio("/"+basepath+"/sounds/success.mp3");
 		this.points++;
 	}
+	$(this.audio).unbind("canplaythrough");
 	$(this.audio).bind("canplaythrough", function(){
 		that.audio.play();
 	});
+	this.audio.load();
 	$(".gameResult .result").css("color", (success) ? "darkgreen" : "darkred").text(this.data[this.currentLevel][lang]);
 	this.currentLevel++;	
 }

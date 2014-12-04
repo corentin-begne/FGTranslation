@@ -1,4 +1,4 @@
 <div class="title">
 	<?=$headTitle?>
 </div>
-<input type="text" id="login" placeholder="USERNAME"/>
+<input type="text" autocomplete="off" id="login" placeholder="USERNAME"/>
