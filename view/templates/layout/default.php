@@ -5,7 +5,7 @@
 		<?=stylesheet::includeCore()?>
 	</head>
 	<title><?=$title?></title>
-	<body basepath="<?=route::$basePath?>">
+	<body basepath="<?=requireCore::$config['wsPath']?>">
 		<?=partial::includeCore("/backdrop")?>	
 		<div class="contentContainer">
         	<?=$content?>

@@ -12,7 +12,7 @@ $(document).ready(function(){
 			dataType:'json',
 			success: function(data){
 				if(data.success){
-					window.location.href = basepath;
+					window.location.href = basepath+"/";
 				}
 			}
 		});		

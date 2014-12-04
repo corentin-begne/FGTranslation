@@ -80,8 +80,8 @@
 		 * @param string $input Path of YAML file or string containing YAML
 		 */
 		public static function YAMLLoad($input) {
-			$Spyc = new Spyc;
-			return $Spyc->__load($input);
+			$ymlTool = new YmlTool;
+			return $ymlTool->__load($input);
 		}
 
 		/**
@@ -104,8 +104,8 @@
 		 * @param string $input String containing YAML
 		 */
 		public static function YAMLLoadString($input) {
-			$Spyc = new Spyc;
-			return $Spyc->__loadString($input);
+			$ymlTool = new YmlTool;
+			return $ymlTool->__loadString($input);
 		}
 
 		/**
@@ -130,8 +130,8 @@
 		 * @param int $no_opening_dashes Do not start YAML file with "---\n"
 		 */
 		public static function YAMLDump($array, $indent = false, $wordwrap = false, $no_opening_dashes = false) {
-			$spyc = new Spyc;
-			return $spyc->dump($array, $indent, $wordwrap, $no_opening_dashes);
+			$ymlTool = new YmlTool;
+			return $ymlTool->dump($array, $indent, $wordwrap, $no_opening_dashes);
 		}
 
 
@@ -1074,7 +1074,7 @@
 	   * @return array
 	   */
 	  function yaml_parse_file ($file) {
-	    return Spyc::YAMLLoad($file);
+	    return ymlTool::YAMLLoad($file);
 	  }
 	}	
 ?>

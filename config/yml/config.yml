@@ -1,4 +1,6 @@
 dev:
   path: /translation
+  wsPath: /translation
 prod:
-  path: /
+  path: http://translation.bennette.info
+  wsPath: 

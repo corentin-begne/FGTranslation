@@ -13,7 +13,8 @@
 		}
 		public static function includeCore($folders){			
 			self::$basePath = $_SERVER['DOCUMENT_ROOT'].(($_SERVER['DOCUMENT_ROOT'][(strlen($_SERVER['DOCUMENT_ROOT'])-1)] !== '/') ? '/' : '')."..";
-			self::$config = yaml_parse_file(self::$basePath."/config/yml/config.yml")[ENV];
+			self::$config = yaml_parse_file(self::$basePath."/config/yml/config.yml");
+			self::$config = self::$config[ENV];
 			foreach($folders as &$folder){
 				$classes = self::globRecursive(self::$basePath."/$folder/*.class.php");
 				foreach($classes as &$class){

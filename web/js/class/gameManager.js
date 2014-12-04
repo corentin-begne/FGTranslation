@@ -33,7 +33,7 @@ GameManager.prototype.check = function(success){
 GameManager.prototype.init = function(game){
 	var that = this;
 	$(".menu").mousedown(function(){
-		window.location.href = that.basePath;
+		window.location.href = that.basePath+"/";
 	});
 	$(".replay").mousedown(function(){
 		that.go(game, {

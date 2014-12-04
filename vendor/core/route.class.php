@@ -10,7 +10,7 @@
 		public static function check(){
 			self::$basePath = requireCore::$config["path"];
 			self::$routes = yaml_parse_file(requireCore::$basePath.'/config/yml/routes.yml');			
-			self::$currentRoute = explode('/', trim(substr($_SERVER["REQUEST_URI"], strlen(self::$basePath)+1) , '/'));
+			self::$currentRoute = explode('/', trim(substr($_SERVER["REQUEST_URI"], strlen(requireCore::$config["wsPath"])) , '/'));
 			$routed = false;
 			// check existing routes
 			foreach(self::$routes as $route => $config){
@@ -51,7 +51,7 @@
 			}	
 		}
 		public static function redirectByName($name){
-			$url = "http://".$_SERVER["HTTP_HOST"].self::$basePath."/".self::$routes[$name]['url'];
+			$url = self::$basePath.'/'.self::$routes[$name]['url'];
 			header('Location: '.$url);
 		}
 	}
