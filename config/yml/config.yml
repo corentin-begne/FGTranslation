@@ -2,5 +2,5 @@ dev:
   path: /translation
   wsPath: /translation
 prod:
-  path: http://translation.bennette.info
+  path: http://englishgame.bennette.info
   wsPath: 
