@@ -1,6 +1,6 @@
 @black: #212a31;
 @white: #fafafa;
-@basepath: "/translation";
+@basepath: "http://englishgame.bennette.info";
 .verticalGradient(@topColor: #000000, @bottomColor: #000000){
 	background-image:-moz-linear-gradient(@topColor, @bottomColor);
 	background-image:-webkit-linear-gradient(@topColor, @bottomColor);
@@ -149,16 +149,16 @@
 .fonts(){
 	@font-face{
 	    font-family: topSecret;
-	    src:  url('fonts/topSecret.ttf')
+	    src:  url('@{basepath}/css/fonts/topSecret.ttf')
 	}
 	@font-face{
 	    font-family: walt;
-	    src:  url('fonts/walt.ttf'),
-	          url('fonts/walt.otf');
+	    src:  url('@{basepath}/css/fonts/walt.ttf'),
+	          url('@{basepath}/css/fonts/walt.otf');
 	}
 	@font-face{
 	    font-family: arrow;
-	    src:  url('fonts/arrow.ttf'),
-	          url('fonts/arrow.otf');
+	    src:  url('@{basepath}/css/fonts/arrow.ttf'),
+	          url('@{basepath}/css/fonts/arrow.otf');
 	}
 }

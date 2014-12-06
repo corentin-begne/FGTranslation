@@ -11,7 +11,10 @@
 	     	}
 	  	 	return $files;
 		}
-		public static function includeCore($folders){			
+		public static function includeCore($folders){
+			if(empty($_SERVER['DOCUMENT_ROOT'])){
+				$_SERVER['DOCUMENT_ROOT'] = dirname(__FILE__).'/..';
+			}		
 			self::$basePath = $_SERVER['DOCUMENT_ROOT'].(($_SERVER['DOCUMENT_ROOT'][(strlen($_SERVER['DOCUMENT_ROOT'])-1)] !== '/') ? '/' : '')."..";
 			self::$config = yaml_parse_file(self::$basePath."/config/yml/config.yml");
 			self::$config = self::$config[ENV];

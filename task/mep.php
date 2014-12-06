@@ -4,9 +4,9 @@
 	$files = requireCore::globRecursive(requireCore::$basePath.'/web/css/*.less');
 	foreach($files as $file)
 	{
-		$targetFile = str_replace($basePath, $targetPath, $file);
+		$targetFile = str_replace('.less', '.css', $file);
 		// compile and compress css
-		exec('lessc -sm=on -x --url-args="releaseDate='.time().'" --global-var=\'basepath="'.$configYml['prod']['path'].'"\' '.$file.' '.$targetFile);
+		exec('lessc -sm=on -x --url-args="releaseDate='.time().'" --global-var=\'basepath="'.requireCore::$config['path'].'"\' '.$file.' '.$targetFile);
 		echo $targetFile."\n";
 	}
 	echo "minify css finished\n";
