@@ -6,7 +6,8 @@
 		public static function check($name){
 			$user = User::getByName(array(':name'=>$name));
 			if($user['id'] == ''){
-				$user = User::create(array(':name'=>$name));
+				User::create(array(':name'=>$name));
+				$user = User::getByName(array(':name'=>$name));
 			}
 			$_SESSION['userData'] = $user;
 		}
