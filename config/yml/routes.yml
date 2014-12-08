@@ -1,8 +1,12 @@
+gameShuffle:
+  url: game/shuffle
+  module: game
+  action: shuffle
 gameResult:
   url: game/result
   module: game
   action: result
-gamePlay:
+gameTranslation:
   url: game/translation
   module: game
   action: translation

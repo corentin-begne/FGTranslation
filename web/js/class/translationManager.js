@@ -50,9 +50,13 @@ TranslationManager.prototype.check = function(){
 	var currentAnswer = $("#answer").val().toLowerCase();
 	var success = false;
 	answers.forEach(function(answer){
-		if(currentAnswer == answer.toLowerCase()){
+		if(answer.indexOf("(") !== -1 && answer.indexOf("(") !== 0){
+			answer = answer.substr(0, answer.indexOf("(")).trim();
+		}
+		answer = answer.replace(/[\\(\\)!?\\)\\[]/g, "").trim();
+		if(currentAnswer.trim() == answer.toLowerCase()){
 			success = true;
-			return;
+			return false;
 		}
 	});
 	this.gameManager.check(success);
