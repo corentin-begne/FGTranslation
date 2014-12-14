@@ -1,3 +1,14 @@
+shuffle:
+  javascript:
+    - jquery.min.js
+    - jquery-ui-1.10.4.min.js
+    - extend.js
+    - tools/animationHelper.js
+    - class/gameManager.js
+    - class/shuffleManager.js
+    - shuffle.js
+  stylesheet: 
+    - shuffle.css
 translation:
   javascript:
     - jquery.min.js
@@ -19,7 +30,3 @@ irregular:
     - irregular.js
   stylesheet: 
     - irregular.css
-list:
-  javascript:
-
-  stylesheet: 

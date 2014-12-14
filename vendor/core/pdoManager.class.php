@@ -22,7 +22,7 @@
 		 	self::getConnection();
 		 	self::$statement = self::$pdoHandle->prepare($query);
 		}
-		public static function execute($params=null){
+		public static function execute($params=null){			
 			self::$statement->execute($params);
 		}
 	}  	

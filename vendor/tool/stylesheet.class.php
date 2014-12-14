@@ -3,7 +3,8 @@
 		const BASEPATH = 'css';
 
 		public static function includeCore(){
-			foreach(module::$config[route::$action]["stylesheet"] as $css){
+			$name = (isset(module::$config['template'])) ? module::$config['template'] : route::$action;
+			foreach(module::$config[$name]["stylesheet"] as $css){
 				echo self::get($css);
 			}
 		}

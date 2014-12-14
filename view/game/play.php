@@ -1,4 +1,4 @@
 <?=partial::includeCore('/header')?>
-<?=partial::includeCore('translation')?>
+<?=partial::includeCore($type)?>
 <?=partial::includeCore('result')?>	
 <?=partial::includeCore('/footer')?>
