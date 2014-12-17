@@ -1,8 +1,25 @@
 <?
 	abstract class model{
+		public static function getLastInsertId(){
+			return pdoManager::$pdoHandle->lastInsertId() ;
+		}
+		public static function prepare($query){
+			pdoManager::prepare($query);        	
+		}		
+		public static function execute($params){
+			pdoManager::$statement->execute($params);
+		}
+		public static function delete($params=null){
+			pdoManager::prepare("
+				delete from
+					".get_called_class()."
+				".(isset($params) ? " where ".self::setWhereFields($params) : '')	
+			);
+			pdoManager::execute($params);
+		}
 		public static function insert($params, $type="insert"){
  			$fields = implode(',', array_keys($params));
-        	$values = implode(',:', array_keys($params));
+        	$values = implode(',:', array_keys($paramss));
         	pdoManager::prepare("
 				$type into 
 					".get_called_class()." 
