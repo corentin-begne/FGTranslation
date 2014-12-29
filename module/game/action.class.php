@@ -2,7 +2,7 @@
 	class gameAction{
 		public function result(){
 			$result = array('success'=>true);
-			$userResult = UserGameResult::getOneWhereAll(array(
+			$userResult = UserGameResult::findOneWhereAll(array(
 				"userId"=>$_SESSION["userData"]["id"],
 				"categoryId"=>$_POST['categoryId'],
 				"gameId"=>$_POST['gameId'],
@@ -23,7 +23,7 @@
 		}
 		public function play(){
 			if(userManager::isAuthentificated()){
-				$result = UserGameResult::getOneWhereAll(array(
+				$result = UserGameResult::findOneWhereAll(array(
 					"userId"=>$_SESSION["userData"]["id"],
 					"categoryId"=>$_POST['categoryId'],
 					"gameId"=>$_POST['gameId'],
@@ -34,7 +34,7 @@
 				$this->lang = $_POST['lang'];
 				$this->gameInfos = Game::getInfos(array("id"=>$_POST['gameId'], "difficultyId"=>$_POST['difficultyId']));
 				$this->points = (!$result) ? 0 : $result["points"];
-				$this->category = ImportCategory::getOneWhereAll(array("id"=>$_POST['categoryId']));
+				$this->category = ImportCategory::findOneWhereAll(array("id"=>$_POST['categoryId']));
 				$this->categoryId = $_POST['categoryId'];
 				$this->difficultyId = $_POST['difficultyId'];
 				$this->type = $_POST['type'];

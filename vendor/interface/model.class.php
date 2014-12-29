@@ -3,31 +3,47 @@
 		public static function getLastInsertId(){
 			return pdoManager::$pdoHandle->lastInsertId() ;
 		}
+		public static function getFoundRows(){
+			self::prepare('select found_rows() as nb');
+			$row = self::executeOne();
+			return $row['nb'] ;
+		}
 		public static function prepare($query){
 			pdoManager::prepare($query);        	
 		}		
-		public static function execute($params){
+		public static function execute($params, $multiple=null){
 			pdoManager::$statement->execute($params);
+			if($multiple === true){
+				return pdoManager::$statement->fetchAll();
+			}else if($multiple === false){
+				return pdoManager::$statement->fetch();
+			}
+		}
+		public static function executeOne($params=null){
+			self::execute($params, false);
+		}
+		public static function executeAll($params=null){
+			self::execute($params, true);
 		}
 		public static function delete($params=null){
-			pdoManager::prepare("
+			self::prepare("
 				delete from
 					".get_called_class()."
 				".(isset($params) ? " where ".self::setWhereFields($params) : '')	
 			);
-			pdoManager::execute($params);
+			self::execute($params);
 		}
 		public static function insert($params, $type="insert"){
  			$fields = implode(',', array_keys($params));
-        	$values = implode(',:', array_keys($paramss));
-        	pdoManager::prepare("
+        	$values = implode(',:', array_keys($params));
+        	self::prepare("
 				$type into 
 					".get_called_class()." 
 				($fields)
 				    values
 				(:$values)
 			");
-			pdoManager::execute($params);
+			self::execute($params);
 		}
 		public static function replace($params){
 			self::insert($params, "replace");
@@ -40,33 +56,29 @@
 			);
 			pdoManager::execute($params);
 		}
-		public static function getOne($params=null, $clause=null){
-			self::get($params, $clause);
-			return pdoManager::$statement->fetch();
+		public static function findOne($params=null, $clause=null){
+			return self::find($params, $clause, false);
 		}
-		public static function getAll($params=null, $clause=null){
-			self::get($params, $clause);
-			return pdoManager::$statement->fetchAll();
+		public static function findAll($params=null, $clause=null){
+			return self::find($params, $clause, true);
 		}
-		public static function getOneWhereAll($params=null, $clause=null){
+		public static function findOneWhereAll($params=null, $clause=null){
 			$clause['where'] = array_keys($params);
-			self::get($params, $clause);
-			return pdoManager::$statement->fetch();
+			return self::find($params, $clause, false);
 		}
-		public static function getAllWhereAll($params=null, $clause=null){
+		public static function findAllWhereAll($params=null, $clause=null){
 			$clause['where'] = array_keys($params);
-			self::get($params, $clause);
-			return pdoManager::$statement->fetchAll();
+			return self::find($params, $clause, true);
 		}
-		public static function get($params=null, $clause=null){
-			pdoManager::prepare("
+		public static function find($params=null, $clause=null, $multiple=null){
+			self::prepare("
 				select ".self::getFields($clause['fields'])." 
 				from ".get_called_class()." 
 				".(isset($clause['where']) ? " where ".self::setWhereFields($clause['where']) : '')."
 				".(isset($clause['order']) ? " order by ".$clause['order'] : '')."
 				".(isset($clause['limit']) ? " limit ".$clause['limit'][0].', '.$clause['limit'][1] : '')
 			);
-			pdoManager::execute($params);
+			return self::execute($params, $multiple);
 		}
 		public static function getFields(&$fields){
 			return (isset($fields)) ? $fields : '*';

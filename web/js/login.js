@@ -18,7 +18,7 @@ $(document).ready(function(){
 		});		
 	}	
 	$('#login').focus();	
-	$('#login').keyup(function(){
+	$('#login').keyup(function(event){
 		if(event.keyCode == 13 && pass && $('#login').val() != ''){
 			logUser();
 		}

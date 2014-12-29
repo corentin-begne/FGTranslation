@@ -9,8 +9,8 @@
 				$this->difficultyTitle = "Choisir la difficulté";
 				$this->playTitle = "Jouer";
 				$this->categories = ImportCategory::getInfos();
-				$this->games = Game::getAll();
-				$this->difficulties = Difficulty::getAll();
+				$this->games = Game::findAll();
+				$this->difficulties = Difficulty::findAll();
 			}else{
 				route::redirectByName('login');
 			}
