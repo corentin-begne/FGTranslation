@@ -1,20 +1,11 @@
-gameShuffle:
-  url: game/shuffle
-  module: game
-  action: shuffle
 gameResult:
   url: game/result
   module: game
   action: result
-gameTranslation:
-  url: game/translation
+gamePlay:
+  url: game/:type
   module: game
-  action: translation
-  layout: default
-gameIrregular:
-  url: game/irregular
-  module: game
-  action: irregular
+  action: play
   layout: default
 loginUser:
   url: login/user

@@ -16,7 +16,7 @@ TranslationManager.prototype.init = function(){
 			that.next();
 		}
 	});
-	$('#answer').keyup(function(){
+	$('#answer').keyup(function(event){
 		if(event.keyCode == 13 && $(this).val() != ''){
 			if(that.pass){
 				that.pass = false;
@@ -43,6 +43,15 @@ TranslationManager.prototype.nextQuestion = function(){
 	$("#answer").focus();
 	this.gameManager.animationHelper.animateText($(".lang:eq(0) .title"), this.data[this.currentLevel][this.lang]);
 }
+TranslationManager.prototype.cleanString = function(val){
+	var excludes = ["[", "("];
+	excludes.forEach(function(exclude){
+		if(val.indexOf(exclude) !== -1 && val.indexOf(exclude) !== 0){
+			val = val.substr(0, val.indexOf(exclude)).trim();
+		}
+	});
+	return val;
+}
 TranslationManager.prototype.check = function(){
 	var that = this;
 	var lang = (this.lang == "fr") ? "en" : "fr";
@@ -50,11 +59,10 @@ TranslationManager.prototype.check = function(){
 	var currentAnswer = $("#answer").val().toLowerCase();
 	var success = false;
 	answers.forEach(function(answer){
-		if(answer.indexOf("(") !== -1 && answer.indexOf("(") !== 0){
-			answer = answer.substr(0, answer.indexOf("(")).trim();
-		}
-		answer = answer.replace(/[\\(\\)!?\\)\\[]/g, "").trim();
-		if(currentAnswer.trim() == answer.toLowerCase()){
+		answer = that.cleanString(answer);
+		answer = answer.replace(/[.!?]/g, "").trim().toLowerCase();
+		currentAnswer = currentAnswer.replace(/[.!?]/g, "").trim();
+		if(currentAnswer == answer){
 			success = true;
 			return false;
 		}

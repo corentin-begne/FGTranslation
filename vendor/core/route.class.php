@@ -17,12 +17,18 @@
 				if(isset($config['url'])){
 					$route = explode('/', $config['url']);
 					if(count($route) === count(self::$currentRoute)){
-						for($i=0; $i<count($route); $i++){
-							if($route[$i] !== self::$currentRoute[$i] && self::$currentRoute[$i] !== "*"){
+						$length = count($route);
+						for($i=0; $i<$length; $i++){
+							if($route[$i] !== self::$currentRoute[$i] && 
+								$route[$i] !== "*" && 
+								strpos($route[$i], ':') === false){
 								break;
 							}						
 						}
 						if($i === count($route)){
+							if(strpos($config['url'], ':') !== false){
+								self::setPostData($config['url']);
+							}
 							self::redirect($config);
 							$routed = true;
 							break;
@@ -35,17 +41,27 @@
 				self::redirect(self::$routes["default"]);
 			}
 		}
+		public static function setPostData($referer){
+			$tags = explode('/', $referer);
+			$length = count($tags);
+			for($i=0; $i<$length; $i++){
+				if(strpos($tags[$i], ':') !== false){				
+					$_POST[str_replace(':', '', $tags[$i])] = self::$currentRoute[$i];
+				}
+			}
+		}
 		public static function redirect($config){
 			self::$module = $config['module'];
-			self::$action = $config['action'];
-			if(isset($config['layout'])){
-				self::$layout = $config['layout'];
-			}	
+			self::$action = $config['action']; 	
 			// get module/action
 			$data = module::get();
 			if($data != null){
 				echo $data;
 			}else{
+				// check layout
+				if(isset($config['layout'])){
+					self::$layout = $config['layout'];
+				}
 				// include view in layout
 				view::includeCore();
 			}	

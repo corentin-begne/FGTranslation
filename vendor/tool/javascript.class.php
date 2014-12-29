@@ -3,7 +3,8 @@
 		const BASEPATH = 'js';
 
 		public static function includeCore(){
-			foreach(module::$config[route::$action]["javascript"] as $js){
+			$name = (isset(module::$config['template'])) ? module::$config['template'] : route::$action;
+			foreach(module::$config[$name]["javascript"] as $js){
 				echo self::get($js);
 			}
 		}

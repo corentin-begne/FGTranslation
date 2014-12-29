@@ -10,4 +10,5 @@
 		echo $targetFile."\n";
 	}
 	echo "minify css finished\n";
+	exec("scp -r /var/www/translation/* bennette@ftp.bennette.info:www/translation/");
 ?>

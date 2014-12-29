@@ -4,6 +4,7 @@ index:
     - extend.js
     - tools/animationHelper.js
     - class/gameManager.js
+    - class/homeManager.js
     - home.js
   stylesheet:
     - home.css
