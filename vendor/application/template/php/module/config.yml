@@ -1,0 +1,7 @@
+index:
+  javascript:
+    - lib/jquery.min.js
+    - module/manager.js
+    - module/main.js
+  stylesheet:
+    - module/main.css

@@ -1,32 +1,32 @@
 shuffle:
   javascript:
-    - jquery.min.js
-    - jquery-ui-1.10.4.min.js
-    - extend.js
-    - tools/animationHelper.js
-    - class/gameManager.js
-    - class/shuffleManager.js
-    - shuffle.js
+    - lib/jquery.min.js
+    - lib/jquery-ui-1.10.4.min.js
+    - helper/extend.js
+    - helper/animation.js
+    - game/manager.js
+    - game/shuffle/manager.js
+    - game/shuffle/main.js
   stylesheet: 
     - shuffle.css
 translation:
   javascript:
-    - jquery.min.js
-    - extend.js
-    - tools/animationHelper.js
-    - class/gameManager.js
-    - class/translationManager.js
-    - translation.js
+    - lib/jquery.min.js
+    - helper/extend.js
+    - helper/animation.js
+    - game/manager.js
+    - game/translation/manager.js
+    - game/translation/main.js
   stylesheet: 
     - translation.css
 irregular:
   javascript:
-    - jquery.min.js
-    - jquery-ui-1.10.4.min.js
-    - extend.js
-    - tools/animationHelper.js
-    - class/gameManager.js
-    - class/irregularManager.js
-    - irregular.js
+    - lib/jquery.min.js
+    - lib/jquery-ui-1.10.4.min.js
+    - helper/extend.js
+    - helper/animation.js
+    - game/manager.js
+    - game/irregular/manager.js
+    - game/irregular/main.js
   stylesheet: 
     - irregular.css

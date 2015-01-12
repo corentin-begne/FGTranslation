@@ -1,10 +1,10 @@
 index:
   javascript:
-    - jquery.min.js
-    - extend.js
-    - tools/animationHelper.js
-    - class/gameManager.js
-    - class/homeManager.js
-    - home.js
+    - lib/jquery.min.js
+    - helper/extend.js
+    - helper/animation.js
+    - game/manager.js
+    - home/manager.js
+    - home/main.js
   stylesheet:
     - home.css

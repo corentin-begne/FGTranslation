@@ -1,0 +1,36 @@
+Difficulty:
+  columns:
+    id: {type: int(11), null: false, extra: auto_increment, Key: PRI}
+    name: {type: varchar(255), null: false}
+    nb: {type: int(11), null: false}
+Game:
+  columns:
+    id: {type: int(11), null: false, extra: auto_increment, Key: PRI}
+    name: {type: varchar(255), null: false}
+Import:
+  columns:
+    french: {type: varchar(512), null: false, Key: PRI}
+    english: {type: varchar(512), null: false}
+    categoryId: {type: int(11), null: false, Key: PRI}
+ImportCategory:
+  columns:
+    id: {type: int(11), null: false, extra: auto_increment, Key: PRI}
+    name: {type: varchar(255), null: false, Key: UNI}
+ImportIrregular:
+  columns:
+    english: {type: varchar(255), null: false, Key: PRI}
+    preterit: {type: varchar(255), null: false, Key: PRI}
+    past: {type: varchar(255), null: false, Key: PRI}
+    french: {type: varchar(255), null: false, Key: PRI}
+User:
+  columns:
+    id: {type: int(11), null: false, extra: auto_increment, Key: PRI}
+    name: {type: varchar(255), null: false}
+UserGameResult:
+  columns:
+    userId: {type: int(11), null: false, Key: PRI}
+    categoryId: {type: int(11), null: false, Key: PRI}
+    gameId: {type: int(11), null: false, Key: PRI}
+    difficultyId: {type: int(11), null: false, Key: PRI}
+    points: {type: int(11), null: false}
+    lang: {type: varchar(255), null: false, Key: PRI}

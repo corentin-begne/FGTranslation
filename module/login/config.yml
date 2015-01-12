@@ -1,6 +1,7 @@
 index:
   javascript:
-    - jquery.min.js
-    - login.js
+    - lib/jquery.min.js
+    - login/manager.js
+    - login/main.js
   stylesheet:
     - login.css

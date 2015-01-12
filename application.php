@@ -3,9 +3,13 @@
 	if(isset($argv[1])){
 		if(strpos($argv[1], ':') !== false){
 			list($action, $type) = explode(':', $argv[1]);
-			$value = (isset($argv[2])) ? $argv[2] : null;
 			if(class_exists($action) && method_exists($action, $type)){
-				$action::$type($value);
+				array_splice($argv, 0, 2);
+				try{
+					call_user_func_array(array($action, $type), $argv);
+				}catch(Exception $e){
+					echo cli::error($e->getMessage())."\n";
+				}
 			}
 		}
 	}else{
