@@ -6,5 +6,5 @@
 	}
 	require_once(dirname(__FILE__)."/../vendor/tool/yml.class.php");
 	require_once(dirname(__FILE__)."/../vendor/core/require.class.php");
-	requireCore::includeCore(array("vendor", "class", "model", "module"));
+	requireCore::includeCore(array("vendor", "class", "task", "model", "module"));
 ?>

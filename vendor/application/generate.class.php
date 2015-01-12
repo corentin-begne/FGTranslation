@@ -1,13 +1,13 @@
 <?
 	class generate{
 		public static function schema(){
-			$indents = array("  ", "    ", "      ");
+			$indents = array("  ", "    ");
 			$schemaYml = requireCore::$basePath.'/config/yml/schema.yml';
 			$content = '';
 			// save old schema
-			/*if(file_exists($schemaYml)){
+			if(file_exists($schemaYml)){
 				exec("mv $schemaYml $schemaYml.BAK".time());
-			}*/
+			}
 			// get tables list
 			pdoManager::prepare('show tables');
 			pdoManager::execute();
@@ -55,6 +55,17 @@
 		      }
 		    }
 		    exec("cp -r $sourcePath/view $targetPath");
+		}
+
+		public static function task($name){
+		    $targetFile = requireCore::$basePath."/task/$name.class.php";
+		    $sourcePathFile = dirname(__FILE__)."/template/php/task/template.class.php";
+			if(!file_exists($targetFile)){
+				$content = file_get_contents($sourcePathFile);
+				$content = str_replace("template", $name, $content);
+				file_put_contents($targetFile, $content);
+				echo $targetFile."\n";
+			}
 		}
 
 		public static function models(){
