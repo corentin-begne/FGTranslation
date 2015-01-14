@@ -86,8 +86,8 @@
 		public static function javascript($module, $action=null){
 		    $path = "/".$module.(isset($action) ? "/".$action : "");
 		    $name = isset($action) ? $action.ucfirst($module) : $module;
-		    $tags = array("templateManager", "TemplateManager", "template", "Template");
-		    $replaces = array($name."Manager", ucfirst($name)."Manager", $name, ucfirst($name));
+		    $tags = array("templateManager", "TemplateManager", "template", "Template", "module");
+		    $replaces = array($name."Manager", ucfirst($name)."Manager", $name, ucfirst($name), $module);
 		    $targetPath = requireCore::$basePath."/web/js".$path;
 		    $sourcePath = dirname(__FILE__)."/template/js";
 		    if(!file_exists($targetPath)){
@@ -96,9 +96,32 @@
 		    $files = glob($sourcePath.'/*.js');
 		    foreach($files as &$file){
 		      $targetFile = $targetPath."/".basename($file);
+		      if(!file_exists($targetFile)){		        
+		        if(!isset($action) || basename($file) !== "action.js"){
+		        	$content = file_get_contents($file);
+		        	$content = str_replace($tags, $replaces, $content);
+		        	file_put_contents($targetFile, $content);
+		        }	
+		      }
+		    } 
+		}
+
+		public static function stylesheet($module, $action=null){
+		    $path = "/".$module.(isset($action) ? "/".$action : "");
+		    $replace = isset($action) ? true : false;
+		    $targetPath = requireCore::$basePath."/web/css".$path;
+		    $sourcePath = dirname(__FILE__)."/template/css";
+		    if(!file_exists($targetPath)){
+				exec("mkdir -p $targetPath");
+			}
+		    $files = glob($sourcePath.'/*.less');
+		    foreach($files as &$file){
+		      $targetFile = $targetPath."/".basename($file);
 		      if(!file_exists($targetFile)){
 		        $content = file_get_contents($file);
-		        $content = str_replace($tags, $replaces, $content);
+		        if($replace){
+		        	$content = str_replace("../", "../../", $content);
+		        }
 		        file_put_contents($targetFile, $content);
 		      }
 		    } 

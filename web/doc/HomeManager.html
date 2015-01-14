@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: LoginManager</title>
+    <title>Class: HomeManager</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="keyword" content="" />
@@ -281,7 +281,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="LoginManager.html">Class: LoginManager</h1>
+        <h1 class="page-title" data-filename="HomeManager.html">Class: HomeManager</h1>
         
 
 
@@ -290,10 +290,10 @@
     
 <header>
     <h2>
-    LoginManager
+    HomeManager
     </h2>
     
-        <div class="class-description"><p>LoginManager</p></div>
+        <div class="class-description"><p>HomeManager</p></div>
     
 </header>  
 
@@ -305,14 +305,14 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="LoginManager">
+        <h4 class="name" id="HomeManager">
             
-            new LoginManager<span class="signature">()</span>
+            new HomeManager<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line11">line 11</a>
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line14">line 14</a>
         </div>
         
     </div>
@@ -321,6 +321,10 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        <p>Manage homepage</p>
+    </div>
     
 
     
@@ -378,6 +382,8 @@
             
                 <td class="attributes">
                 
+                    &lt;optional><br>
+                
                     
                 
                 </td>
@@ -386,56 +392,25 @@
             
                 <td class="default">
                 
+                    true
+                
                 </td>
             
             
-            <td class="description last"><p>value to know if the ajax call can be made</p></td>
+            <td class="description last"><p>to know if action is available</p></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>username</code></td>
+                <td class="name"><code>gameName</code></td>
             
             
             <td class="type">
             
                 
 <span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last"><p>name of the user validate in the input</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>loginAction</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="LoginAction.html">LoginAction</a></span>
 
 
             
@@ -454,25 +429,25 @@
             
                 <td class="default">
                 
-                    new LoginAction()
+                    ""
                 
                 </td>
             
             
-            <td class="description last"><p>Instance of LoginAction</p></td>
+            <td class="description last"><p>name of the game selectioned</p></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>basePath</code></td>
+                <td class="name"><code>gameId</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Number</span>
 
 
             
@@ -480,6 +455,8 @@
             
             
                 <td class="attributes">
+                
+                    &lt;optional><br>
                 
                     
                 
@@ -489,10 +466,123 @@
             
                 <td class="default">
                 
+                    0
+                
                 </td>
             
             
-            <td class="description last"><p>base path url for the ajax call</p></td>
+            <td class="description last"><p>Id of the game selectioned</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>_fontLoadingSpeed</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    100
+                
+                </td>
+            
+            
+            <td class="description last"><p>font loading time speed in ms</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>homeAction</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="HomeAction.html">HomeAction</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    new HomeAction()
+                
+                </td>
+            
+            
+            <td class="description last"><p>Instance of HomeAction</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>animationHelper</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">AnimationHelper</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    new AnimationHelper()
+                
+                </td>
+            
+            
+            <td class="description last"><p>Instance of AnimationHelper</p></td>
         </tr>
 	
 	
@@ -558,14 +648,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="init">
+        <h4 class="name" id="changeCategory">
             
-            init<span class="signature">()</span>
+            changeCategory<span class="signature">(direction, className)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line20">line 20</a>
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line162">line 162</a>
         </div>
         
     </div>
@@ -576,7 +666,146 @@
     
     
     <div class="description">
-        <p>initialize event</p>
+        <p>change category on mousedown</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>[description]</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>className</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>[description]</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="init">
+            
+            init<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line25">line 25</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>initialize events</p>
     </div>
     
 
@@ -629,14 +858,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="logUser">
+        <h4 class="name" id="showOptionContainer">
             
-            logUser<span class="signature">()</span>
+            showOptionContainer<span class="signature">(title)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line46">line 46</a>
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line136">line 136</a>
         </div>
         
     </div>
@@ -647,7 +876,7 @@
     
     
     <div class="description">
-        <p>log user and redirect to home page</p>
+        <p>show option container on game select</p>
     </div>
     
 
@@ -655,6 +884,51 @@
     
     
     
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>title</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>title of the option container</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -708,14 +982,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="event:logUserSuccess">
+        <h4 class="name" id="event:changeCategory">
             
-            logUserSuccess
+            changeCategory
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line52">line 52</a>
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line36">line 36</a>
         </div>
         
     </div>
@@ -726,7 +1000,7 @@
     
     
     <div class="description">
-        <p>redirect user to home page on log success</p>
+        <p>change category switch direction mousedown</p>
     </div>
     
 
@@ -779,14 +1053,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="event:validLogin">
+        <h4 class="name" id="event:fontReady">
             
-            validLogin
+            fontReady
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line27">line 27</a>
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line144">line 144</a>
         </div>
         
     </div>
@@ -797,7 +1071,7 @@
     
     
     <div class="description">
-        <p>valid input value on enter keyup</p>
+        <p>center option container on font ready</p>
     </div>
     
 
@@ -806,50 +1080,573 @@
     
     
     
+    
+    
+<dl class="details">
+    
         
+    
+    
+    
 
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>event</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Event</span>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
 
+    
+    
 
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
             
-            </td>
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:launchGame">
             
+            launchGame
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line116">line 116</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>launch game on mousedown</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
             
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:selectCategory">
             
-            <td class="description last">
-                
-                <p>keyup event object</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
+            selectCategory
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line51">line 51</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>show option interface on category selection mousedown</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:selectDifficulty">
+            
+            selectDifficulty
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line92">line 92</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>select difficulty on mousedown</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:selectGame">
+            
+            selectGame
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line60">line 60</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>show option interface or category container switch game selection mousedown</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:selectLang">
+            
+            selectLang
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line104">line 104</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>select lang on mousedown</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:setActionAvailable">
+            
+            setActionAvailable
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line179">line 179</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>change private value to set action available</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:showCategoryContainer">
+            
+            showCategoryContainer
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line81">line 81</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>show category container on game container hide</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="event:showNextCategory">
+            
+            showNextCategory
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js_.html">home/manager.js</a>, <a href="manager.js_.html#line171">line 171</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>show next category</p>
+    </div>
+    
+
+    
+    
+    
+    
     
     
     

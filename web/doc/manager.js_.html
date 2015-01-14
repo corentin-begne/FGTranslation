@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: LoginManager</title>
+    <title>Source: home/manager.js</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="keyword" content="" />
@@ -281,621 +281,205 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="LoginManager.html">Class: LoginManager</h1>
+        <h1 class="page-title" data-filename="manager.js_.html">Source: home/manager.js</h1>
         
 
 
+    
+    <section>
+        <article>
+            <pre class="prettyprint source"><code>/*global HomeAction, AnimationHelper */
+"use strict";
+/**
+ * @class HomeManager
+ * @constructor
+ * @property {Boolean}			[_isAvailable=true]							to know if action is available
+ * @property {String}			[gameName=""]								name of the game selectioned
+ * @property {Number}			[gameId=0]									Id of the game selectioned
+ * @property {Number}			[_fontLoadingSpeed=100]						font loading time speed in ms
+ * @property {HomeAction}		[homeAction = new HomeAction()]				Instance of HomeAction
+ * @property {AnimationHelper}	[animationHelper = new AnimationHelper()]	Instance of AnimationHelper
+ * @description Manage homepage
+ */
+var HomeManager = function(){
+	this._isAvailable = true;
+	this._fontLoadingSpeed = 100;
+	this.gameName = "";
+	this.gameId = 0;
+	this.homeAction = new HomeAction();
+	this.animationHelper = new AnimationHelper();
+	this.init();
+};
 
-<section>
-    
-<header>
-    <h2>
-    LoginManager
-    </h2>
-    
-        <div class="class-description"><p>LoginManager</p></div>
-    
-</header>  
+/** initialize events */
+HomeManager.prototype.init = function(){
+	var that = this;
 
-<article>
-    <div class="container-overview">
-    
-    
-    
-        
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="LoginManager">
-            
-            new LoginManager<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line11">line 11</a>
-        </div>
-        
-    </div>
+	/** assign events */
+	$(".up, .down").mousedown(changeCategory);
+	$(".category").mousedown(selectCategory);
+	$(".game").mousedown(selectGame);
+	$(".difficulty").mousedown(selectDifficulty);
+	$(".lang").mousedown(selectLang);
+	$(".play").mousedown(launchGame);
 
-    
-</dt>
-<dd>
-    
-    
+	/**
+     * @name HomeManager#changeCategory
+     * @event
+     * @description change category switch direction mousedown
+     */
+	function changeCategory(){
+		if(!that._isAvailable){
+			return false;			
+		}
 
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-        <h5 class="subsection-title">Properties:</h5>
-        
-        <dl>
+		that._isAvailable = false;
+		var className = $(this).attr("class");
+		that.changeCategory(className, ".category");
+	}
 
-<table class="props">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		<th>Argument</th>
-		
-		
-		
-		<th>Default</th>
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
+	/**
+     * @name HomeManager#selectCategory
+     * @event
+     * @description show option interface on category selection mousedown
+     */
+	function selectCategory(){	
+		that.showOptionContainer($(this).attr("name"));
+	}
+
+	/**
+     * @name HomeManager#selectGame
+     * @event
+     * @description show option interface or category container switch game selection mousedown
+     */
+	function selectGame(){
+		that.gameId = Number($(this).attr("id"));
+		that.gameName = $(this).attr("name");
+
+		/** switch game */
+		switch(that.gameId){
+			case 2 :
+				$(".langContainer").hide();
+				that.showOptionContainer($(this).text());
+				break;
+
+			default :
+				that.animationHelper.hide($(this).parent(), showCategoryContainer);
+				break;
+		}
+
+		/**
+		 * @name HomeManager#showCategoryContainer
+		 * @event
+		 * @description show category container on game container hide
+		 */
+		function showCategoryContainer(){
+			that.animationHelper.show($(".categoryContainer"));
+		}
+
+	}
 	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>_isAvailable</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
+	/**
+	 * @name HomeManager#selectDifficulty
+	 * @event
+	 * @description select difficulty on mousedown
+	 */
+	function selectDifficulty(){
+		if(!$(this).hasClass("selected")){
+			$(".difficulty").removeClass("selected");
+			$(this).addClass("selected");
+		}
+	}
 
+	/**
+	 * @name HomeManager#selectLang
+	 * @event
+	 * @description select lang on mousedown
+	 */	
+	function selectLang(){
+		if(!$(this).hasClass("selected")){
+			$(".lang").removeClass("selected");
+			$(this).addClass("selected");
+		}
+	}
 
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last"><p>value to know if the ajax call can be made</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>username</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
+	/**
+	 * @name HomeManager#launchGame
+	 * @event
+	 * @description launch game on mousedown
+	 */	
+	function launchGame(){
+		that.homeAction.play(that.gameName, {
+			lang			: $(".lang.selected").attr("id"),
+			difficultyId	: $(".difficulty.selected").attr("id"),
+			categoryId		: $(".category:not(.hide)").attr("id"),
+			gameId			: that.gameId
+		});
+	}						
 
+};
 
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last"><p>name of the user validate in the input</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>loginAction</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="LoginAction.html">LoginAction</a></span>
+/**
+ * @description show option container on game select
+ * @param  {String} title title of the option container
+ */
+HomeManager.prototype.showOptionContainer = function(title){
+	var optionContainer = $(".optionContainer");
 
+	/** initialize configuration interface */
+	optionContainer.find(".title").text(title);	
+	optionContainer.parent().removeClass("hide");
+	setTimeout(fontReady, this._fontLoadingSpeed);
 
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                    new LoginAction()
-                
-                </td>
-            
-            
-            <td class="description last"><p>Instance of LoginAction</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>basePath</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
+	/**
+	 * @name HomeManager#fontReady
+	 * @event
+	 * @description center option container on font ready
+	 */	
+	function fontReady(){
+		optionContainer.css({
+			top:"calc(50% - "+(optionContainer.outerHeight()/2)+"px)"
+		});
+	}
 
+};
 
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last"><p>base path url for the ajax call</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table></dl>
-        
-    
-        
-    
-    
-    
+/**
+ * @description change category on mousedown
+ * @param  {String} direction [description]
+ * @param  {String} className [description]
+ */
+HomeManager.prototype.changeCategory = function(direction, className){
+	var that = this;
+	var cat = $(className+":not(.hide)");
+	var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);	
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
+	if(newCat.length > 0){
+		this.animationHelper.hide(cat, showNextCategory);
+	}
 
-    
-    
+	/**
+	 * @name HomeManager#showNextCategory
+	 * @event
+	 * @description show next category
+	 */
+	function showNextCategory(){
+		that.animationHelper.show(newCat, setActionAvailable);
 
-    
+		/**
+		 * @name HomeManager#setActionAvailable
+		 * @event
+		 * @description change private value to set action available
+		 */
+		function setActionAvailable(){
+			that._isAvailable = true;
+		}
 
-    
-    
-    
-    
-    
-    
-    
-</dd>
+	}
 
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        <h3 class="subsection-title">Methods</h3>
-        
-        <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="init">
-            
-            init<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line20">line 20</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>initialize event</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="logUser">
-            
-            logUser<span class="signature">()</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line46">line 46</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>log user and redirect to home page</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        </dl>
-    
-    
-    
-    
-    
-        <h3 class="subsection-title">Events</h3>
-        
-        <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="event:logUserSuccess">
-            
-            logUserSuccess
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line52">line 52</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>redirect user to home page on log success</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="event:validLogin">
-            
-            validLogin
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line27">line 27</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>valid input value on enter keyup</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>event</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Event</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>keyup event object</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        </dl>
-    
-</article>
-
-</section>  
+};</code></pre>
+        </article>
+    </section>
 
 
 

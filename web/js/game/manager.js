@@ -1,73 +1,89 @@
+/*global SoundHelper, AnimationHelper, GameAction */
+"use strict";
+/**
+ * @class GameManager
+ * @constructor
+ * @property {Number}			[points = 0]								current user points
+ * @property {AnimationHelper}	[animationHelper = new AnimationHelper()]	Instance of AnimationHelper
+ * @property {SoundHelper}		[soundHelper = new SoundHelper()]			Instance of SoundHelper
+ * @property {GameAction}		[gameAction = new GameAction()]				Instance of GameAction
+ * @property {Number}			[lives = $(".heart").length]				current user lives
+ * @property {Number}			[_dieSpeed = 500]							time to wait to launch die animation in ms
+ * @description Manage games
+ */
 var GameManager = function(){
-	this.basePath = $("body").attr("basepath");
 	this.points = 0;
 	this.animationHelper = new AnimationHelper();
+	this.soundHelper = new SoundHelper();
+	this.gameAction = new GameAction();
 	this.lives = $(".heart").length;
-	this.audio;
-}
-GameManager.prototype.check = function(success){
+	this._dieSpeed = 500;
+};
+
+/** initialize events */
+GameManager.prototype.init = function(){
 	var that = this;
-	if(!success){
-		this.audio = new Audio(this.basePath+"/sounds/error.mp3");
-		setTimeout(function(){
-			that.animationHelper.lose(function(){
-				that.audio = new Audio(that.basePath+"/sounds/pop.mp3");
-				$(that.audio).unbind("canplaythrough");
-				$(that.audio).bind("canplaythrough", function(){
-					that.audio.play();
-				});
-				that.audio.load();
-			});
-		}, 500);
-		this.lives--;
-	}else{
-		this.audio = new Audio(this.basePath+"/sounds/success.mp3");
-		this.points++;
+
+	/** assign events */
+	$(".menu").mousedown(redirectHome);
+	$(".replay").mousedown(replay);
+
+	/**
+	 * @name GameManager#redirectHome
+	 * @description redirect to homepage on mousedown
+	 */
+	function redirectHome(){
+		that.gameAction.actionHelper.redirectHome();
 	}
-	$(this.audio).unbind("canplaythrough");
-	$(this.audio).bind("canplaythrough", function(){
-		that.audio.play();
-	});
-	this.audio.load();
-}
-GameManager.prototype.init = function(game){
-	var that = this;
-	$(".menu").mousedown(function(){
-		window.location.href = that.basePath+"/";
-	});
-	$(".replay").mousedown(function(){
-		that.go(game, {
-			gameId:$(".gameContainer").attr("gameId"),
-			difficultyId:$(".gameContainer").attr("difficultyId"),
-			categoryId:$(".gameContainer").attr("categoryId"),
-			lang:$(".gameContainer").attr("lang")		
-		});
-	});	
+
+	/**
+	 * @name GameManager#replay
+	 * @description redirect to homepage on mousedown
+	 */
+	function replay(){
+		window.location.reload();
+	}
+
+	/** animate hearts */
 	this.animationHelper.heartStand();
-}
-GameManager.prototype.go = function(type, data){
-	var path = this.basePath+"/game/"+type
-	if(type === "home"){
-		path = this.basePath;
+};
+
+/**
+ * @description play sound, manage point and lives switch success
+ * @param  {Boolean} success let know if the answer is valid
+ */
+GameManager.prototype.valid = function(success){
+	var that = this;
+
+	if(!success){
+		this.soundHelper.play("success");
+		this.points++;				
+	}else{
+		this.lives--;
+		this.soundHelper.play("error");
+		setTimeout(dieReady, this._dieSpeed);
 	}
-	$.redirectPost(path, data);
-}
+	
+	/**
+	 * @name GameManager#dieReady
+	 * @description play sond and heart animation on timeout
+	 */	
+	function dieReady(){
+		that.soundHelper.play("pop");
+		that.animationHelper.lose();
+	}
+
+};
+
+/** send result on game finish */
 GameManager.prototype.finish = function(cb){
-	$.ajax({
-		type: "POST",
-		data:{
-			points:this.points,
-			gameId:$(".gameContainer").attr("gameId"),
-			difficultyId:$(".gameContainer").attr("difficultyId"),
-			categoryId:$(".gameContainer").attr("categoryId"),
-			lang:$(".gameContainer").attr("lang")	
-		},
-		url: this.basePath+'/game/result',
-		dataType:'json',
-		success: function(result){
-			if(cb !== undefined){
-				cb(result);
-			}
-		}
-	});
-}
+	var container = $(".gameContainer");
+
+	this.gameAction.updateResult({
+		points			: this.points,
+		gameId			: container.attr("gameId"),
+		difficultyId	: container.attr("difficultyId"),
+		categoryId		: container.attr("categoryId"),
+		lang			: container.attr("lang")	
+	}, cb);
+};

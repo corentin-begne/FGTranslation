@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: LoginManager</title>
+    <title>Class: GameManager</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="keyword" content="" />
@@ -281,7 +281,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="LoginManager.html">Class: LoginManager</h1>
+        <h1 class="page-title" data-filename="GameManager.html">Class: GameManager</h1>
         
 
 
@@ -290,10 +290,10 @@
     
 <header>
     <h2>
-    LoginManager
+    GameManager
     </h2>
     
-        <div class="class-description"><p>LoginManager</p></div>
+        <div class="class-description"><p>GameManager</p></div>
     
 </header>  
 
@@ -305,14 +305,14 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="LoginManager">
+        <h4 class="name" id="GameManager">
             
-            new LoginManager<span class="signature">()</span>
+            new GameManager<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line11">line 11</a>
+            <a href="manager.js.html">game/manager.js</a>, <a href="manager.js.html#line14">line 14</a>
         </div>
         
     </div>
@@ -321,6 +321,10 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        <p>Manage games</p>
+    </div>
     
 
     
@@ -363,79 +367,13 @@
 	
         <tr>
             
-                <td class="name"><code>_isAvailable</code></td>
+                <td class="name"><code>points</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last"><p>value to know if the ajax call can be made</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>username</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last"><p>name of the user validate in the input</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>loginAction</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="LoginAction.html">LoginAction</a></span>
+<span class="param-type">Number</span>
 
 
             
@@ -454,25 +392,25 @@
             
                 <td class="default">
                 
-                    new LoginAction()
+                    0
                 
                 </td>
             
             
-            <td class="description last"><p>Instance of LoginAction</p></td>
+            <td class="description last"><p>current user points</p></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>basePath</code></td>
+                <td class="name"><code>animationHelper</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">AnimationHelper</span>
 
 
             
@@ -480,6 +418,8 @@
             
             
                 <td class="attributes">
+                
+                    &lt;optional><br>
                 
                     
                 
@@ -489,10 +429,160 @@
             
                 <td class="default">
                 
+                    new AnimationHelper()
+                
                 </td>
             
             
-            <td class="description last"><p>base path url for the ajax call</p></td>
+            <td class="description last"><p>Instance of AnimationHelper</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>soundHelper</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SoundHelper.html">SoundHelper</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    new SoundHelper()
+                
+                </td>
+            
+            
+            <td class="description last"><p>Instance of SoundHelper</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>gameAction</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="GameAction.html">GameAction</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    new GameAction()
+                
+                </td>
+            
+            
+            <td class="description last"><p>Instance of GameAction</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>lives</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    $(".heart").length
+                
+                </td>
+            
+            
+            <td class="description last"><p>current user lives</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>_dieSpeed</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    500
+                
+                </td>
+            
+            
+            <td class="description last"><p>time to wait to launch die animation in ms</p></td>
         </tr>
 	
 	
@@ -550,11 +640,221 @@
     
     
     
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="dieReady">dieReady</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>play sond and heart animation on timeout</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="redirectHome">redirectHome</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>redirect to homepage on mousedown</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="replay">replay</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>redirect to homepage on mousedown</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
     
     
         <h3 class="subsection-title">Methods</h3>
         
         <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="finish">
+            
+            finish<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="manager.js.html">game/manager.js</a>, <a href="manager.js.html#line79">line 79</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>send result on game finish</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
             
 <dt>
     <div class="nameContainer">
@@ -565,7 +865,7 @@
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line20">line 20</a>
+            <a href="manager.js.html">game/manager.js</a>, <a href="manager.js.html#line24">line 24</a>
         </div>
         
     </div>
@@ -576,7 +876,7 @@
     
     
     <div class="description">
-        <p>initialize event</p>
+        <p>initialize events</p>
     </div>
     
 
@@ -629,14 +929,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="logUser">
+        <h4 class="name" id="valid">
             
-            logUser<span class="signature">()</span>
+            valid<span class="signature">(success)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line46">line 46</a>
+            <a href="manager.js.html">game/manager.js</a>, <a href="manager.js.html#line55">line 55</a>
         </div>
         
     </div>
@@ -647,157 +947,7 @@
     
     
     <div class="description">
-        <p>log user and redirect to home page</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        </dl>
-    
-    
-    
-    
-    
-        <h3 class="subsection-title">Events</h3>
-        
-        <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="event:logUserSuccess">
-            
-            logUserSuccess
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line52">line 52</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>redirect user to home page on log success</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="event:validLogin">
-            
-            validLogin
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="manager.js__.html">login/manager.js</a>, <a href="manager.js__.html#line27">line 27</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>valid input value on enter keyup</p>
+        <p>play sound, manage point and lives switch success</p>
     </div>
     
 
@@ -828,13 +978,13 @@
 	
         <tr>
             
-                <td class="name"><code>event</code></td>
+                <td class="name"><code>success</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Event</span>
+<span class="param-type">Boolean</span>
 
 
             
@@ -844,7 +994,7 @@
             
             <td class="description last">
                 
-                <p>keyup event object</p></td>
+                <p>let know if the answer is valid</p></td>
         </tr>
 	
 	
@@ -892,6 +1042,10 @@
 </dd>
 
         </dl>
+    
+    
+    
+    
     
 </article>
 

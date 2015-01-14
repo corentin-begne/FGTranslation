@@ -1,11 +1,11 @@
-<html>
+<html basePath="<?=requireCore::$config['wsPath']?>">
 	<head>
 		<?=partial::includeCore("/meta")?>
 		<?=javascript::includeCore()?>
 		<?=stylesheet::includeCore()?>
 	</head>
 	<title><?=$title?></title>
-	<body basepath="<?=requireCore::$config['wsPath']?>">
+	<body>
 		<?=partial::includeCore("/backdrop")?>	
 		<div class="contentContainer">
         	<?=$content?>

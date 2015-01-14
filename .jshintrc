@@ -24,7 +24,7 @@
     "strict": true, // Require `use strict` pragma in every file
     "maxparams": 3, // This option lets you set the max number of formal parameters allowed per function
     "maxdepth": 3, // This option lets you control how nested do you want your blocks to be
-    "maxlen": 80, // This option lets you set the maximum length of a line
+    "maxlen": 180, // This option lets you set the maximum length of a line
 
     // == Relaxing Options ================================================
     //
@@ -51,7 +51,7 @@
     "shadow": false,    // Allows re-define variables later in code e.g. `var x=1; x=2;`.
     "sub": false,    // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
     "supernew": false,    // Tolerate `new function () { ... };` and `new Object;`.
-    "validthis": false,    // Tolerate strict violations when the code is running in strict mode and you use this in a non-constructor function
+    "validthis": true,    // Tolerate strict violations when the code is running in strict mode and you use this in a non-constructor function
     "onecase": false,    // Tolerate switches with just one case.
     "smarttabs": false,    // Tolerate mixed tabs and spaces when the latter are used for alignmnent only.
 

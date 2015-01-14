@@ -8,7 +8,7 @@ shuffle:
     - game/shuffle/manager.js
     - game/shuffle/main.js
   stylesheet: 
-    - shuffle.css
+    - game/shuffle/main.css
 translation:
   javascript:
     - lib/jquery.min.js
@@ -18,7 +18,7 @@ translation:
     - game/translation/manager.js
     - game/translation/main.js
   stylesheet: 
-    - translation.css
+    - game/translation/main.css
 irregular:
   javascript:
     - lib/jquery.min.js
@@ -29,4 +29,4 @@ irregular:
     - game/irregular/manager.js
     - game/irregular/main.js
   stylesheet: 
-    - irregular.css
+    - game/irregular/main.css
