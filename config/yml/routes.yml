@@ -8,9 +8,9 @@ gamePlay:
   action: play
   layout: default
 loginUser:
-  url: login/user
+  url: login/connect
   module: login
-  action: logUser
+  action: connect
   layout: default
 login:
   url: login

@@ -7,7 +7,7 @@ var TemplateManager = function(){
 	this.init();
 };
 
-/** initialize */
+/** initialize events */
 TemplateManager.prototype.init = function(){
 
 };

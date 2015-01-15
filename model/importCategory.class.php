@@ -6,5 +6,9 @@
 				'order'=>'name asc'
 			));
 		}
+
+		public static function findCategoryById($params){
+			self::findOneWhereAll($params);
+		}
 	}
 ?>

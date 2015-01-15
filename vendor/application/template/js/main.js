@@ -14,4 +14,5 @@ var templateManager;
     function init(){
        templateManager = new TemplateManager(); 
     }
+    
 })();

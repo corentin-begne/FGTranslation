@@ -30,6 +30,7 @@ GameManager.prototype.init = function(){
 
 	/**
 	 * @name GameManager#redirectHome
+	 * @event
 	 * @description redirect to homepage on mousedown
 	 */
 	function redirectHome(){
@@ -38,6 +39,7 @@ GameManager.prototype.init = function(){
 
 	/**
 	 * @name GameManager#replay
+	 * @event
 	 * @description redirect to homepage on mousedown
 	 */
 	function replay(){

@@ -47,14 +47,14 @@ LoginManager.prototype.logUser = function(){
 	var that = this;		
 	
 	/** ajax call to log user in session */
-	this.loginAction.user({name:that.username}, logUserSuccess);	
+	this.loginAction.connect({name:that.username}, redirectHome);	
 
 	/**
-     * @name LoginManager#logUserSuccess
+     * @name LoginManager#redirectHome
      * @event
-     * @description redirect user to home page on log success
+     * @description redirect user to home page on connection success
      */
-	function logUserSuccess(data){
+	function redirectHome(data){
 		if(data.success){
 			window.location.href = that.basepath+"/";
 		}

@@ -1,66 +1,73 @@
 <?
 	class gameAction{
+		public $data;
+
+		public function __construct(){
+
+			if(!userManager::isAuthentificated()){
+				route::redirectByName('login');
+				return false;
+			}
+
+			$this->data = array(
+				'userId'		=> $_SESSION['userData']['id'],
+				'categoryId'	=> $this->categoryId,
+				'gameId'		=> $this->gameId,
+				'lang'			=> $this->lang,
+				'difficultyId'	=> $this->difficultyId
+			);
+		}
+
 		public function result(){
-			$result = array('success'=>true);
-			$userResult = UserGameResult::findOneWhereAll(array(
-				"userId"=>$_SESSION["userData"]["id"],
-				"categoryId"=>$_POST['categoryId'],
-				"gameId"=>$_POST['gameId'],
-				"lang"=>$_POST["lang"],
-				"difficultyId"=>$_POST['difficultyId']
-			), array('fields'=>'points'));
-			if(!$userResult || ((int)$_POST['points'] > 0 && (int)$userResult["points"] < (int)$_POST['points'])){
-				UserGameResult::replace(array(
-					"userId"=>$_SESSION["userData"]["id"],
-					"categoryId"=>$_POST['categoryId'],
-					"gameId"=>$_POST['gameId'],
-					"lang"=>$_POST["lang"],
-					"difficultyId"=>$_POST['difficultyId'],
-					"points"=>$_POST['points']
-				));
+			$result = array('success'=>true);		
+			$userResult = UserGameResult::findUserPointsByGame($this->data);
+
+			if(!$userResult || ((int)$this->points > 0 && (int)$userResult['points'] < (int)$this->points)){
+				$data['points'] = $this->points;
+				UserGameResult::replace($this->data);
 			}	
+
 			return json_encode($result);
 		}
+
 		public function play(){
-			if(userManager::isAuthentificated()){
-				$result = UserGameResult::findOneWhereAll(array(
-					"userId"=>$_SESSION["userData"]["id"],
-					"categoryId"=>$_POST['categoryId'],
-					"gameId"=>$_POST['gameId'],
-					"lang"=>$_POST["lang"],
-					"difficultyId"=>$_POST['difficultyId']
-				), array('fields'=>'points'));
-				$this->gameId = $_POST['gameId'];
-				$this->lang = $_POST['lang'];
-				$this->gameInfos = Game::getInfos(array("id"=>$_POST['gameId'], "difficultyId"=>$_POST['difficultyId']));
-				$this->points = (!$result) ? 0 : $result["points"];
-				$this->category = ImportCategory::findOneWhereAll(array("id"=>$_POST['categoryId']));
-				$this->categoryId = $_POST['categoryId'];
-				$this->difficultyId = $_POST['difficultyId'];
-				$this->type = $_POST['type'];
-				module::$config['template'] = $this->type;				
-				if(method_exists($this, $_POST['type'])){
-					$this->$_POST['type']();
-				}				
-			}else{
-				route::redirectByName('login');
-			}
+			$userResult = UserGameResult::findUserPointsByGame($this->data);
+			$this->points = (!$userResult) ? 0 : $userResult['points'];
+			$this->gameInfos = Game::getInfos(array(
+				'id'			=> $this->gameId, 
+				'difficultyId'	=> $this->difficultyId
+			));
+			$this->category = ImportCategory::findCategoryById(array(
+				'id' => $this->categoryId
+			));
+			module::$config['template'] = $this->type;		
+
+			if(method_exists($this, $this->type)){
+				$this->${$this->type}();
+			}				
+
 		}
+
 		public function shuffle(){
 
 		}
+
 		public function translation(){
-			$this->gameData = Import::getByCategory(array("categoryId"=>$_POST["categoryId"]));
+			$this->gameData = Import::findByCategory(array(
+				'categoryId' => $this->categoryId
+			));
 			$this->title = $this->category['name'];		
 		}
+
 		public function irregular(){
-			$this->gameData = ImportIrregular::getOrdered();
+			$this->gameData = ImportIrregular::findOrdered();
 			$this->heads = array(
-				"french"=>"français", 
-				"english"=>"anglais", 
-				"preterit"=>"preterit", 
-				"past"=> "participe passé");
+				'french'	=> 'français', 
+				'english'	=> 'anglais', 
+				'preterit'	=> 'preterit', 
+				'past'		=> 'participe passé');
 			$this->title = $this->gameInfos['name'];
 		}
+
 	}
 ?>

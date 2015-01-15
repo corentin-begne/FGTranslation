@@ -1,22 +1,29 @@
 <?
 	class loginAction{
 		public function index(){
-			if(!userManager::isAuthentificated()){
-				$this->title = "Authentification";
-				$this->headTitle = "Entrer un nom";
-			}else{
+
+			if(userManager::isAuthentificated()){
 				route::redirectByName('default');
+				return false;
 			}
+
+			$this->title = "Authentification";
+			$this->headTitle = "Entrer un nom";
 		}
 
-		public function logUser(){			
+		public function connect(){			
 			$result = array('success'=>false);
-			if(isset($_POST['name'])){
-				userManager::check($_POST['name']);
-				if(isset($_SESSION['userData'])){
-					$result['success'] = true;
-				}
+
+			if(!isset($this->name)){
+				return json_encode($result);
 			}
+
+			userManager::check($this->name);
+			
+			if(isset($_SESSION['userData'])){
+				$result['success'] = true;
+			}
+
 			return json_encode($result);
 		}
 	}

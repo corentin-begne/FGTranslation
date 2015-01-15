@@ -8,7 +8,14 @@
 			$class = route::$module.'Action';
 			$action = route::$action;
 			self::$data = new $class;
+			self::includePostData();
 			return self::$data->$action();
+		}
+
+		public static function includePostData(){
+			foreach($_POST as $name => $value){
+				self::$data->$name = $value;
+			}
 		}
 	}
 ?>

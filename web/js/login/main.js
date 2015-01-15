@@ -14,4 +14,5 @@ var loginManager;
     function init(){
        loginManager = new LoginManager(); 
     }
+    
 })();

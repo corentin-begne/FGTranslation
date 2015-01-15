@@ -16,10 +16,10 @@ var LoginAction = function(){
  * @param  {Object}   data data to send
  * @param  {Function} cb   callback of the ajax call
  */
-LoginAction.prototype.user = function(data, cb){
+LoginAction.prototype.connect = function(data, cb){
 	var options = {
 		type: "post",
-		action: this.basePath+"/user",
+		action: this.basePath+"/connect",
 		cb: cb,
 		dataType: "json"
 	};

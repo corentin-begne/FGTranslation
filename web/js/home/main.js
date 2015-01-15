@@ -7,10 +7,12 @@ var homeManager;
     $(document).ready(init);
 
     /**
+     * @name main#initHome
      * @event
      * @description initialize home page
      */
     function init(){
        homeManager = new HomeManager(); 
     }
+    
 })();

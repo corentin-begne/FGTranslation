@@ -12,7 +12,7 @@ var GameAction = function(){
 };
 
 /**
- * update game result
+ * @description  update game result
  * @param  {Object}   data data to send
  * @param  {Function} cb   callback of the ajax call
  */
