@@ -12,7 +12,8 @@ var translationManager;
      * @description initialize translation page with game data
      */
     function init(){
-       translationManager = new TranslationManager(gameData); 
+        new JsHelper();
+        translationManager = new TranslationManager(gameData); 
     }
     
 })();

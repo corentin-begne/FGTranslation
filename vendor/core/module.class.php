@@ -9,6 +9,9 @@
 			$action = route::$action;
 			self::$data = new $class;
 			self::includePostData();
+			if(method_exists(self::$data, "hook")){
+				self::$data->hook();
+			}
 			return self::$data->$action();
 		}
 

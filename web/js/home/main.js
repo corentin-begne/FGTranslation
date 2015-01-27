@@ -1,4 +1,4 @@
-/*global HomeManager */
+/*global HomeManager, JsHelper */
 "use strict";
 
 var homeManager;
@@ -12,7 +12,8 @@ var homeManager;
      * @description initialize home page
      */
     function init(){
-       homeManager = new HomeManager(); 
+        new JsHelper();
+        homeManager = new HomeManager(); 
     }
     
 })();

@@ -17,7 +17,7 @@ var HomeManager = function(){
 	this.gameName = "";
 	this.gameId = 0;
 	this.homeAction = new HomeAction();
-	this.animationHelper = new AnimationHelper();
+	this.animation = AnimationHelper.getInstance();
 	this.init();
 };
 
@@ -74,7 +74,7 @@ HomeManager.prototype.init = function(){
 				break;
 
 			default :
-				that.animationHelper.hide($(this).parent(), showCategoryContainer);
+				that.animation.hide($(this).parent(), showCategoryContainer);
 				break;
 		}
 
@@ -84,7 +84,7 @@ HomeManager.prototype.init = function(){
 		 * @description show category container on game container hide
 		 */
 		function showCategoryContainer(){
-			that.animationHelper.show($(".categoryContainer"));
+			that.animation.show($(".categoryContainer"));
 		}
 
 	}
@@ -165,7 +165,7 @@ HomeManager.prototype.changeCategory = function(direction, className){
 	var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);	
 
 	if(newCat.length > 0){
-		this.animationHelper.hide(cat, showNextCategory);
+		this.animation.hide(cat, showNextCategory);
 	}
 
 	/**
@@ -174,7 +174,7 @@ HomeManager.prototype.changeCategory = function(direction, className){
 	 * @description show next category
 	 */
 	function showNextCategory(){
-		that.animationHelper.show(newCat, setActionAvailable);
+		that.animation.show(newCat, setActionAvailable);
 
 		/**
 		 * @name HomeManager#setActionAvailable

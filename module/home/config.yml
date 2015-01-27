@@ -1,7 +1,7 @@
 index:
   javascript:
     - lib/jquery.min.js
-    - helper/extend.js
+    - helper/js.js
     - helper/animation.js
     - home/action.js
     - home/manager.js

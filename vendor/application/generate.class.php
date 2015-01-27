@@ -86,8 +86,8 @@
 		public static function javascript($module, $action=null){
 		    $path = "/".$module.(isset($action) ? "/".$action : "");
 		    $name = isset($action) ? $action.ucfirst($module) : $module;
-		    $tags = array("templateManager", "TemplateManager", "template", "Template", "module");
-		    $replaces = array($name."Manager", ucfirst($name)."Manager", $name, ucfirst($name), $module);
+		    $tags = array("template", "Template", "path");
+    		$replaces = array($name, ucfirst($name), trim($path, '/'));
 		    $targetPath = requireCore::$basePath."/web/js".$path;
 		    $sourcePath = dirname(__FILE__)."/template/js";
 		    if(!file_exists($targetPath)){

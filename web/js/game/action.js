@@ -8,7 +8,7 @@
 */
 var GameAction = function(){
 	this.basePath = "game";
-	this.actionHelper = new ActionHelper();
+	this.actionHelper = ActionHelper.getInstance();
 };
 
 /**

@@ -1,18 +1,17 @@
-/*global LoginManager */
-"use strict";
-
+/*global LoginManager, JsHelper */
 var loginManager;
-(function main(){
+(function(){
+    "use strict";
     /** on document ready */
     $(document).ready(init);
 
     /**
-     * @name main#initLogin
-     * @event
-     * @description initialize login page
+     * @event main#initLogin
+     * @description initialize login page on document ready
      */
     function init(){
-       loginManager = new LoginManager(); 
+        new JsHelper();
+        loginManager = new LoginManager(); 
     }
     
 })();

@@ -2,7 +2,8 @@ shuffle:
   javascript:
     - lib/jquery.min.js
     - lib/jquery-ui-1.10.4.min.js
-    - helper/extend.js
+    - helper/js.js
+    - helper/sound.js
     - helper/animation.js
     - game/manager.js
     - game/shuffle/manager.js
@@ -12,7 +13,8 @@ shuffle:
 translation:
   javascript:
     - lib/jquery.min.js
-    - helper/extend.js
+    - helper/js.js
+    - helper/sound.js
     - helper/animation.js
     - game/manager.js
     - game/translation/manager.js
@@ -23,8 +25,11 @@ irregular:
   javascript:
     - lib/jquery.min.js
     - lib/jquery-ui-1.10.4.min.js
-    - helper/extend.js
+    - helper/js.js
+    - helper/action.js
+    - helper/sound.js
     - helper/animation.js
+    - game/action.js
     - game/manager.js
     - game/irregular/manager.js
     - game/irregular/main.js

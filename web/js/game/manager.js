@@ -13,8 +13,8 @@
  */
 var GameManager = function(){
 	this.points = 0;
-	this.animationHelper = new AnimationHelper();
-	this.soundHelper = new SoundHelper();
+	this.animationHelper =  AnimationHelper.getInstance();
+	this.soundHelper = SoundHelper.getInstance();
 	this.gameAction = new GameAction();
 	this.lives = $(".heart").length;
 	this._dieSpeed = 500;

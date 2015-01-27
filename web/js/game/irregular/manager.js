@@ -43,7 +43,7 @@ IrregularManager.prototype.nextQuestion = function(){
 		}
 	});
 	for(var i=0; i<this.difficultyId; i++){
-		var nb = this.gameManager.animationHelper.getRandomInt(1, max);
+		var nb = getRandomInt(1, max);
 		var type = types.splice((nb-1), 1)[0];
 		$("."+type).find(".content:last input").removeClass("hide");
 		max--; 

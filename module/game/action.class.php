@@ -2,8 +2,7 @@
 	class gameAction{
 		public $data;
 
-		public function __construct(){
-
+		public function hook(){
 			if(!userManager::isAuthentificated()){
 				route::redirectByName('login');
 				return false;
@@ -43,7 +42,8 @@
 			module::$config['template'] = $this->type;		
 
 			if(method_exists($this, $this->type)){
-				$this->${$this->type}();
+				$fn = $this->type;
+				$this->$fn();
 			}				
 
 		}
