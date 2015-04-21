@@ -12,8 +12,7 @@ var ActionModel;
     ActionModel = function(){
         extendSingleton(ActionModel);
        // this.interfaceHelper = InterfaceHelper.getInstance();
-        this.actionHelper = ActionHelper.getInstance();
-        this.basePath = this.actionHelper.basePath;
+        this.action = ActionHelper.getInstance();
     };
 
     /**
@@ -33,7 +32,7 @@ var ActionModel;
      * @param  {Function} cb   Callback trigger on success with html content
      */
     ActionModel.prototype.getPartial = function(path, data, cb){
-        this.interfaceHelper.getPartial(path, data, cb);
+        this.interface.getPartial(path, data, cb);
     };
 
     /**
@@ -43,7 +42,7 @@ var ActionModel;
      * @param  {Object} data data to send to the interface
      */
     ActionModel.prototype.getModal = function(path, data){
-        this.interfaceHelper.getModal(path, data);
+        this.interface.getModal(path, data);
     };
 
     /**
@@ -53,7 +52,7 @@ var ActionModel;
      * @param  {Object} data data to send to the interface
      */
     ActionModel.prototype.getInterface = function(path, data){   
-        this.interfaceHelper.getInterface(path, data);
+        this.interface.getInterface(path, data);
     };
 
     /**
@@ -70,6 +69,14 @@ var ActionModel;
             cb: cb,
             dataType: "json"
         };
-        this.actionHelper.execute(data, options);
+        this.action.execute(data, options);
+    };
+
+    ActionModel.prototype.redirectHome = function(){
+        window.location.href = this.action.basePath;
+    };
+
+    ActionModel.prototype.redirectPost = function(path, data){
+        $.redirectPost(this.action.basePath+path, data);
     };
 })();

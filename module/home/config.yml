@@ -3,7 +3,8 @@ index:
     - lib/jquery.min.js
     - helper/js.js
     - helper/animation.js
-    - home/action.js
+    - helper/action.js
+    - model/action.js
     - home/manager.js
     - home/main.js
   stylesheet:

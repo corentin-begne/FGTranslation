@@ -4,7 +4,6 @@ index:
     - model/action.js
     - helper/js.js
     - helper/action.js
-    - login/action.js
     - login/manager.js
     - login/main.js
   stylesheet:

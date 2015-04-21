@@ -1,28 +1,26 @@
-/*global SoundHelper, AnimationHelper, GameAction */
+/*global SoundHelper, ActionModel */
 "use strict";
 /**
  * @class GameManager
  * @constructor
- * @property {Number}			[points = 0]								current user points
- * @property {AnimationHelper}	[animationHelper = new AnimationHelper()]	Instance of AnimationHelper
- * @property {SoundHelper}		[soundHelper = new SoundHelper()]			Instance of SoundHelper
- * @property {GameAction}		[gameAction = new GameAction()]				Instance of GameAction
- * @property {Number}			[lives = $(".heart").length]				current user lives
+ * @property {AnimationHelper}	[animation = new AnimationHelper()]			Instance of AnimationHelper
+ * @property {SoundHelper}		[sound = new SoundHelper()]					Instance of SoundHelper
+ * @property {GameAction}		[action = new ActionModel()]				Instance of GameAction
  * @property {Number}			[_dieSpeed = 500]							time to wait to launch die animation in ms
  * @description Manage games
  */
 var GameManager = function(){
-	this.points = 0;
-	this.animationHelper =  AnimationHelper.getInstance();
-	this.soundHelper = SoundHelper.getInstance();
-	this.gameAction = new GameAction();
-	this.lives = $(".heart").length;
+	this.animation =  AnimationHelper.getInstance();
+	this.sound = SoundHelper.getInstance();
+	this.action = ActionModel.getInstance();
 	this._dieSpeed = 500;
 };
 
 /** initialize events */
 GameManager.prototype.init = function(){
 	var that = this;
+	var points = 0;
+	var lives = $(".heart").length;
 
 	/** assign events */
 	$(".menu").mousedown(redirectHome);
@@ -34,7 +32,7 @@ GameManager.prototype.init = function(){
 	 * @description redirect to homepage on mousedown
 	 */
 	function redirectHome(){
-		that.gameAction.actionHelper.redirectHome();
+		that.action.redirectHome();
 	}
 
 	/**

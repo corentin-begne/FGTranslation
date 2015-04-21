@@ -7,9 +7,8 @@ var homeManager;
     $(document).ready(init);
 
     /**
-     * @name main#initHome
-     * @event
-     * @description initialize home page
+     * @event main#initHome
+     * @description Initialize home page
      */
     function init(){
         new JsHelper();

@@ -1,29 +1,27 @@
-/*global HomeAction, AnimationHelper */
+/*global AnimationHelper, ActionModel */
 "use strict";
 /**
  * @class HomeManager
  * @constructor
- * @property {Boolean}			[_isAvailable=true]							to know if action is available
- * @property {String}			[gameName=""]								name of the game selectioned
- * @property {Number}			[gameId=0]									Id of the game selectioned
- * @property {Number}			[_fontLoadingSpeed=100]						font loading time speed in ms
- * @property {HomeAction}		[homeAction = new HomeAction()]				Instance of HomeAction
- * @property {AnimationHelper}	[animationHelper = new AnimationHelper()]	Instance of AnimationHelper
+ * @property {AnimationHelper}	[animation = new AnimationHelper()]	Instance of AnimationHelper
+ * @property {ActionModel}	    [animation = new ActionModel()]	    Instance of ActionModel
  * @description Manage homepage
  */
 var HomeManager = function(){
-	this._isAvailable = true;
-	this._fontLoadingSpeed = 100;
-	this.gameName = "";
-	this.gameId = 0;
-	this.homeAction = new HomeAction();
 	this.animation = AnimationHelper.getInstance();
+	this.action = ActionModel.getInstance();
 	this.init();
 };
 
-/** initialize events */
+/** 
+ * @description Initialize events
+ * @method HomeManager#init
+ */
 HomeManager.prototype.init = function(){
 	var that = this;
+	var isAvailable = true;
+	var gameId = 0;
+	var gameName = "";
 
 	/** assign events */
 	$(".up, .down").mousedown(changeCategory);
@@ -34,43 +32,66 @@ HomeManager.prototype.init = function(){
 	$(".play").mousedown(launchGame);
 
 	/**
-     * @name HomeManager#changeCategory
-     * @event
-     * @description change category switch direction mousedown
+     * @event HomeManager#changeCategory
+     * @description Change category switch direction mousedown
      */
 	function changeCategory(){
-		if(!that._isAvailable){
+		if(!isAvailable){
 			return false;			
 		}
 
-		that._isAvailable = false;
-		var className = $(this).attr("class");
-		that.changeCategory(className, ".category");
+		isAvailable = false;
+		var direction = $(this).attr("class");
+		var className = ".category";
+		var cat = $(className+":not(.hide)");
+		var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);	
+
+		if(newCat.length === 0){
+			isAvailable = true;
+			return false;			
+		}
+
+		that.animation.hide(cat, showNextCategory);
+
+		/**
+		 * @event HomeManager#showNextCategory
+		 * @description Show next category
+		 */
+		function showNextCategory(){
+			that.animation.show(newCat, setActionAvailable);
+
+			/**
+			 * @event HomeManager#setActionAvailable
+			 * @description Change private value to set action available
+			 */
+			function setActionAvailable(){
+				isAvailable = true;
+			}
+
+		}
 	}
 
 	/**
-     * @name HomeManager#selectCategory
-     * @event
+     * @event HomeManager#selectCategory
      * @description show option interface on category selection mousedown
      */
 	function selectCategory(){	
-		that.showOptionContainer($(this).attr("name"));
+		showOptionContainer($(this).attr("name"));
 	}
 
 	/**
-     * @name HomeManager#selectGame
-     * @event
-     * @description show option interface or category container switch game selection mousedown
+     * @event HomeManager#selectGame
+     * @description Show option interface or category container switch game selection mousedown
      */
 	function selectGame(){
-		that.gameId = Number($(this).attr("id"));
-		that.gameName = $(this).attr("name");
+		gameId = Number($(this).attr("id"));
+		gameName = $(this).attr("name");
 
 		/** switch game */
-		switch(that.gameId){
+		switch(gameId){
 			case 2 :
 				$(".langContainer").hide();
-				that.showOptionContainer($(this).text());
+				showOptionContainer($(this).text());
 				break;
 
 			default :
@@ -79,19 +100,42 @@ HomeManager.prototype.init = function(){
 		}
 
 		/**
-		 * @name HomeManager#showCategoryContainer
-		 * @event
-		 * @description show category container on game container hide
+		 * @event HomeManager#showCategoryContainer
+		 * @description Show category container on game container hide
 		 */
 		function showCategoryContainer(){
 			that.animation.show($(".categoryContainer"));
 		}
-
 	}
+
+	/**
+	 * @method HomeManager#showOptionContainer
+	 * @private
+	 * @description Show option container on game select
+	 * @param  {String} [title] Title of the option container
+	 */
+	function showOptionContainer(title){
+		var optionContainer = $(".optionContainer");
+
+		/** initialize configuration interface */
+		optionContainer.find(".title").text(title);	
+		optionContainer.parent().removeClass("hide");
+		setTimeout(fontReady, 200);
+
+		/**
+		 * @event HomeManager#fontReady
+		 * @description Center option container on font ready
+		 */	
+		function fontReady(){
+			optionContainer.css({
+				top:"calc(50% - "+(optionContainer.outerHeight()/2)+"px)"
+			});
+		}
+
+	}	
 	
 	/**
-	 * @name HomeManager#selectDifficulty
-	 * @event
+	 * @event HomeManager#selectDifficulty
 	 * @description select difficulty on mousedown
 	 */
 	function selectDifficulty(){
@@ -103,7 +147,6 @@ HomeManager.prototype.init = function(){
 
 	/**
 	 * @name HomeManager#selectLang
-	 * @event
 	 * @description select lang on mousedown
 	 */	
 	function selectLang(){
@@ -114,77 +157,16 @@ HomeManager.prototype.init = function(){
 	}
 
 	/**
-	 * @name HomeManager#launchGame
-	 * @event
+	 * @event HomeManager#launchGame
 	 * @description launch game on mousedown
 	 */	
 	function launchGame(){
-		that.homeAction.play(that.gameName, {
+		that.action.redirectPost("game/"+gameName, {
 			lang			: $(".lang.selected").attr("id"),
 			difficultyId	: $(".difficulty.selected").attr("id"),
 			categoryId		: $(".category:not(.hide)").attr("id"),
-			gameId			: that.gameId
+			gameId			: gameId
 		});
 	}						
-
-};
-
-/**
- * @description show option container on game select
- * @param  {String} title title of the option container
- */
-HomeManager.prototype.showOptionContainer = function(title){
-	var optionContainer = $(".optionContainer");
-
-	/** initialize configuration interface */
-	optionContainer.find(".title").text(title);	
-	optionContainer.parent().removeClass("hide");
-	setTimeout(fontReady, this._fontLoadingSpeed);
-
-	/**
-	 * @name HomeManager#fontReady
-	 * @event
-	 * @description center option container on font ready
-	 */	
-	function fontReady(){
-		optionContainer.css({
-			top:"calc(50% - "+(optionContainer.outerHeight()/2)+"px)"
-		});
-	}
-
-};
-
-/**
- * @description change category on mousedown
- * @param  {String} direction [description]
- * @param  {String} className [description]
- */
-HomeManager.prototype.changeCategory = function(direction, className){
-	var that = this;
-	var cat = $(className+":not(.hide)");
-	var newCat = (direction === "up") ? cat.prev(className) : cat.next(className);	
-
-	if(newCat.length > 0){
-		this.animation.hide(cat, showNextCategory);
-	}
-
-	/**
-	 * @name HomeManager#showNextCategory
-	 * @event
-	 * @description show next category
-	 */
-	function showNextCategory(){
-		that.animation.show(newCat, setActionAvailable);
-
-		/**
-		 * @name HomeManager#setActionAvailable
-		 * @event
-		 * @description change private value to set action available
-		 */
-		function setActionAvailable(){
-			that._isAvailable = true;
-		}
-
-	}
 
 };

@@ -86,8 +86,15 @@ var AnimationHelper;
             opacity:"-=1"
         },{
             duration: this.speed,
-            complete: cb
+            complete: animationComplete
         }); 
+
+        function animationComplete(){
+            container.addClass("hide");
+            if(isDefined(cb)){
+                cb();
+            }
+        }
     };
 
     /**
